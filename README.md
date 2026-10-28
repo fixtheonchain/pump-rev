@@ -90,7 +90,8 @@ changes over NATS and board sockets. Open pages also watch the curve or pool acc
 | [Donation Relay](onchain/donation-relay.md) | `RLAYHr9TRFcKB2ubYQhspcnXiaGpaVzNQvHytt47RZu` | Donation PDAs → swap → recipients | off-curve `9rmqZkmn…` | 2026-04-24 20:54 |
 | [transfer-hook-authority](onchain/transfer-hook-authority.md) | `333UA891CYPpAJAthphPT3hg1EkUBLhNFoP9HoWW3nug` | Empty, immutable Anchor program | none (immutable) | 2025-07-14 17:43 |
 
-All read on 2026-10-28 at slot 462,377,442 [chain]. Cross-cutting pages:
+All read on 2026-10-28 at slot 462,377,442 [chain]. The deployed binary of each, with its hashes and slots, is in
+[binaries/](binaries/README.md) [bin]. Cross-cutting pages:
 [cpi-graph.md](onchain/cpi-graph.md) (who calls whom), [token-and-modes.md](onchain/token-and-modes.md) (Token-2022 mint,
 metadata, mode flags), [authorities.md](onchain/authorities.md) (every key), [fees.md](onchain/fees.md) (where each
 lamport goes), [lifecycle.md](onchain/lifecycle.md) (create → curve → pool). Instruction tables per program are
@@ -177,9 +178,10 @@ local stores run as `pumpskel-*` containers from `skeleton/infra/compose.yaml` (
 | `features/` | One page per feature area, with the rollout timeline from the flag registry |
 | `reconstruction/` | Services, data pipeline, keepers and signers, and a build blueprint |
 | `skeleton/` | The blueprint built as a local backend (TypeScript workspaces, Rust ingest, migrations, infra) |
+| `binaries/` | The nine deployed program binaries (`.so`) read from mainnet, with `manifest.json` (slots, sha256) |
 | `idl/` | IDLs from `pump-rust-client` 0.5.0; `onchain/` (Anchor IDL accounts); `previous-docs-repo-639b87f/` |
 | `data/` | `capture-log.md`, `frontend-api-v3-contract.md`, `live-snapshot.json`, `flows-snapshot.json` (multisig section refreshed), `extra-snapshot.json`; `previous/` holds the 2026-10-26 snapshots |
-| `scripts/` | Read-only, no dependencies: `read-live.mjs`, `read-flows.mjs`, `read-extra.mjs`, `idl-tables.mjs`, `idl-diff.mjs`, `so-strings.mjs`, shared `lib.mjs` |
+| `scripts/` | Read-only, no dependencies: `read-live.mjs`, `read-flows.mjs`, `read-extra.mjs`, `dump-programs.mjs`, `idl-tables.mjs`, `idl-diff.mjs`, `so-strings.mjs`, shared `lib.mjs` |
 
 ## Reproduce
 

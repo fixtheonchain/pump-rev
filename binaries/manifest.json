@@ -1,0 +1,115 @@
+{
+  "rpc": "https://api.mainnet-beta.solana.com",
+  "readAt": "2026-10-28T13:27:34.269Z",
+  "programs": {
+    "pump": {
+      "program": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+      "programData": "B5MvUwXdiW1NMM6QFFD3ssPKBujD4zMohncbM73Z2BQu",
+      "deploySlot": 458921440,
+      "upgradeAuthority": "7gZufwwAo17y5kg8FMyJy2phgpvv9RSdzWtdXiWHjFr8",
+      "readSlot": 462493028,
+      "file": "binaries/pump.so",
+      "elfBytes": 1934800,
+      "programDataBytes": 10485715,
+      "sha256": "05249b60f8ddf02a53d0f8a43980fde40cce33f73526355b4ef08e292279819f",
+      "verifyHash": "756c04ab1ac76122dcdcf2eeb0073bb139087b23d58d3f0d6c895510ab59d582"
+    },
+    "pump_amm": {
+      "program": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "programData": "6naEzKeUuFh1Jeeu51NXQgr5qkXgXtc9WKNct4xynVJc",
+      "deploySlot": 458921517,
+      "upgradeAuthority": "7gZufwwAo17y5kg8FMyJy2phgpvv9RSdzWtdXiWHjFr8",
+      "readSlot": 462493033,
+      "file": "binaries/pump_amm.so",
+      "elfBytes": 1268504,
+      "programDataBytes": 10485715,
+      "sha256": "51a5f6a7fb5a812de7686e593ce6159f6ee59b15771a3d5d37ab661c46d64586",
+      "verifyHash": "4d5fc41918374b24b16d8372d14a1ac64c768c83a2971bfeef1c8660dad649e7"
+    },
+    "pump_fees": {
+      "program": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+      "programData": "75Uu23mqWBb8LM8vDppqC1mQAnCcBuLXhVaDezVMQLRw",
+      "deploySlot": 456132171,
+      "upgradeAuthority": "7gZufwwAo17y5kg8FMyJy2phgpvv9RSdzWtdXiWHjFr8",
+      "readSlot": 462493038,
+      "file": "binaries/pump_fees.so",
+      "elfBytes": 873256,
+      "programDataBytes": 948944,
+      "sha256": "5b6ceda57863f0dcc3e0e3623052f8342c2c81883379699e71d7ed5383cb3dcf",
+      "verifyHash": "8ad2ca93c7ae97a7fb0de8a99de4d8825ccfdf89f73138cd49bda948e124b8b8"
+    },
+    "mayhem": {
+      "program": "MAyhSmzXzV1pTf7LsNkrNwkWKTo4ougAJ1PPg47MD4e",
+      "programData": "4TXghKDfUy26yBMjicyfSfAp995GbLtNvW1d1uPSknub",
+      "deploySlot": 452655053,
+      "upgradeAuthority": "7gZufwwAo17y5kg8FMyJy2phgpvv9RSdzWtdXiWHjFr8",
+      "readSlot": 462493041,
+      "file": "binaries/mayhem.so",
+      "elfBytes": 775416,
+      "programDataBytes": 777408,
+      "sha256": "9af9e3b1cbc9d89340af4d9d46e4c88d3dc2fc67e0090f9370047d97532ff09d",
+      "verifyHash": "38ce9f996b6d9eea79b583cf5ed0b9c9cfe8b931a901d4a7d468dffb46994cca"
+    },
+    "pump_agent_payments": {
+      "program": "AgenTMiC2hvxGebTsgmsD4HHBa8WEcqGFf87iwRRxLo7",
+      "programData": "H6H5jKFLoexLYnponVsKZV7eCEE279yNJWQ2gotN74Sd",
+      "deploySlot": 429909554,
+      "upgradeAuthority": "7gZufwwAo17y5kg8FMyJy2phgpvv9RSdzWtdXiWHjFr8",
+      "readSlot": 462493045,
+      "file": "binaries/pump_agent_payments.so",
+      "elfBytes": 512448,
+      "programDataBytes": 715560,
+      "sha256": "71711e13d8e5a547e6374f6bb0083809b6ebe0f961a669b081114a8493def600",
+      "verifyHash": "52a5b53194c9be73f6f1662407fde78f25a07cfadfbeda8e57b1088492c26694"
+    },
+    "pump_stables_router": {
+      "program": "6Vo3245eszAb5wuqEMw8mGdbfRUdKbHhDHP5LcaGuTAB",
+      "programData": "5RWm5iSZx3XgcEQgEjdj7QYRsSRUhfHcAZE6fVKrNxhx",
+      "deploySlot": 454846926,
+      "upgradeAuthority": "92gWFZMpGhWzVq5tjBnJxF9VnFwE3ydB2idJp9z2D9Nr",
+      "readSlot": 462493048,
+      "file": "binaries/pump_stables_router.so",
+      "elfBytes": 2191048,
+      "programDataBytes": 2191448,
+      "sha256": "1ada810f38b2303daedca3450d5926300841bd9030651ec951b2fe87c682c01c",
+      "verifyHash": "ca52ecd74ba2152047abb67ca651ff4594958322a7a8fec731a50028dda85f5c"
+    },
+    "terminal_proxy": {
+      "program": "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3",
+      "programData": "Dw3aPJma3ZaaRgTorVE2scvJtArdQuM2WjTPZXRYwPt6",
+      "deploySlot": 458774985,
+      "upgradeAuthority": "5oJNGGDxGGTt2eXuwaqtuM1AXqvWg7dCs626QnYC8xDn",
+      "readSlot": 462493053,
+      "file": "binaries/terminal_proxy.so",
+      "elfBytes": 1081320,
+      "programDataBytes": 1485012,
+      "sha256": "ad102727af62c216c832a9674b9c53b5c5cac7f82c0dbedd60dd0d79e888e9d0",
+      "verifyHash": "9f502273889e014270d798f1e52887bff5f6a4e60564fac048d06d0ab7db0047"
+    },
+    "donation_relay": {
+      "program": "RLAYHr9TRFcKB2ubYQhspcnXiaGpaVzNQvHytt47RZu",
+      "programData": "5QH8Ay11KgpRMyECYofHwAr6SzfFEGkbtPoM6eXv8V7B",
+      "deploySlot": 415422992,
+      "upgradeAuthority": "9rmqZkmn3Bzd4jAL5uw3TXCgWvbHwH1VyW6fdFtimASu",
+      "readSlot": 462493056,
+      "file": "binaries/donation_relay.so",
+      "elfBytes": 818280,
+      "programDataBytes": 830448,
+      "sha256": "56d81ec64a0ba070d3d23f3c1547b31d659e85716dfa2198ec4b0ce6cd355333",
+      "verifyHash": "8808a0a6e19992e661540107ec7fcb760ec6a7f60d807cecde6a6b9f52669d8e"
+    },
+    "transfer_hook_authority": {
+      "program": "333UA891CYPpAJAthphPT3hg1EkUBLhNFoP9HoWW3nug",
+      "programData": "J97GHGFf2Dvf6bAEpkXbZTc4XkXprpqQG63j8dZVJMWK",
+      "deploySlot": 353292884,
+      "upgradeAuthority": null,
+      "readSlot": 462493060,
+      "file": "binaries/transfer_hook_authority.so",
+      "elfBytes": 174688,
+      "programDataBytes": 227664,
+      "sha256": "ab01516eef291b162f028da501e19fa5971ef0ed7af5ad33567c556a8e914f5b",
+      "verifyHash": "3430ea82b8211f90dc28aa2d4b469c9a73dabb750a2b26a33406682d4b2c9ee0"
+    }
+  },
+  "rpcCalls": 10
+}

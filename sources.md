@@ -8,6 +8,7 @@ Every fact in this folder carries one of the tags below. "Observed" tags are thi
 | Tag | What it is | Where the raw material is |
 | --- | --- | --- |
 | `[chain]` | Mainnet accounts read through `https://api.mainnet-beta.solana.com` on **2026-10-28 06:37–06:48 UTC** (slot 462,377,442 onward): `scripts/read-live.mjs` (15 calls), `scripts/read-flows.mjs keys` (4), `scripts/read-extra.mjs` (16). Values carried over from 2026-10-26 (slot 461,522,470) are the previous research's reads, re-checked where the docs say "Re-verified" | `data/live-snapshot.json`, `data/flows-snapshot.json`, `data/extra-snapshot.json`; 2026-10-26 in `data/previous/` |
+| `[bin]` | The deployed program binaries, read from each program's ProgramData account through `https://api.mainnet-beta.solana.com` on **2026-10-28 13:27 UTC** (slots 462,493,028–462,493,060) by `scripts/dump-programs.mjs` (10 calls) | `binaries/`, `binaries/manifest.json` |
 | `[tx]` | A decoded mainnet transaction, signature given (2026-10-26 ones decoded by the previous research; 2026-10-28 ones by `read-extra.mjs`) | `data/previous/flows-snapshot.json`, `data/extra-snapshot.json` |
 | `[idl]` | Anchor IDLs: `idl/pump.json`, `pump_amm.json`, `pump_fees.json`, `pump_agent_payments.json` from `pump-rust-client` 0.5.0 (crates.io, 2026-10-19); `idl/previous-docs-repo-639b87f/` from github.com/pump-fun/pump-public-docs `639b87f`; `idl/onchain/` the Anchor IDL accounts read from chain (Pump, PumpSwap, Pump Fees, Donation Relay) | `idl/` |
 | `[docs]` | Published by pump.fun: github.com/pump-fun/pump-public-docs (no commit after `639b87f` of 2026-10-13, checked through the GitHub API on 2026-10-28), github.com/pump-fun/pump-fun-skills (`create-coin`, `swap`, `coin-fees`, `tokenized-agents`), github.com/pump-fun/pump-segments-sdk, github.com/pump-fun/transfer-hook-authority, the pump-fun GitHub org's repo list | read as text; the skills' scripts were not run |
@@ -47,7 +48,7 @@ Each is written next to the evidence it rests on.
 
 ## Method
 
-- RPC: 35 calls on public mainnet, no `getProgramAccounts`, no polling.
+- RPC: 35 calls on public mainnet for the map and 10 for the program binaries, no `getProgramAccounts`, no polling.
 - Browser: public pages only. No sign-in, wallet, signature or transaction; the terms dialog was left unanswered.
   Each public endpoint was hit only by the app itself, plus one in-page call each to `/api/server-time`,
   `/sol-price` and `/referrals/fee-rates` to read headers.
