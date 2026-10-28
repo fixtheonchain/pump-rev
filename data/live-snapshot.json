@@ -1,0 +1,2742 @@
+{
+  "rpc": "https://api.mainnet-beta.solana.com",
+  "readAt": "2026-10-28T06:37:24.742Z",
+  "slot": 462377442,
+  "programs": {
+    "pump": {
+      "address": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "programData": "B5MvUwXdiW1NMM6QFFD3ssPKBujD4zMohncbM73Z2BQu",
+      "lastDeploySlot": 458921440,
+      "upgradeAuthority": "7gZufwwAo17y5kg8FMyJy2phgpvv9RSdzWtdXiWHjFr8",
+      "programDataSpace": 10485760,
+      "programDataLamports": 53268311040,
+      "lastDeployTime": "2026-10-19T17:47:02.000Z"
+    },
+    "pump_amm": {
+      "address": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "programData": "6naEzKeUuFh1Jeeu51NXQgr5qkXgXtc9WKNct4xynVJc",
+      "lastDeploySlot": 458921517,
+      "upgradeAuthority": "7gZufwwAo17y5kg8FMyJy2phgpvv9RSdzWtdXiWHjFr8",
+      "programDataSpace": 10485760,
+      "programDataLamports": 53268311040,
+      "lastDeployTime": "2026-10-19T17:47:20.000Z"
+    },
+    "pump_fees": {
+      "address": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "programData": "75Uu23mqWBb8LM8vDppqC1mQAnCcBuLXhVaDezVMQLRw",
+      "lastDeploySlot": 456132171,
+      "upgradeAuthority": "7gZufwwAo17y5kg8FMyJy2phgpvv9RSdzWtdXiWHjFr8",
+      "programDataSpace": 948989,
+      "programDataLamports": 4821514360,
+      "lastDeployTime": "2026-10-12T17:40:24.000Z"
+    },
+    "mayhem": {
+      "address": "MAyhSmzXzV1pTf7LsNkrNwkWKTo4ougAJ1PPg47MD4e",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "programData": "4TXghKDfUy26yBMjicyfSfAp995GbLtNvW1d1uPSknub",
+      "lastDeploySlot": 452655053,
+      "upgradeAuthority": "7gZufwwAo17y5kg8FMyJy2phgpvv9RSdzWtdXiWHjFr8",
+      "programDataSpace": 777453,
+      "programDataLamports": 3950111480,
+      "lastDeployTime": "2026-10-02T15:47:53.000Z"
+    },
+    "pump_agent_payments": {
+      "address": "AgenTMiC2hvxGebTsgmsD4HHBa8WEcqGFf87iwRRxLo7",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "programData": "H6H5jKFLoexLYnponVsKZV7eCEE279yNJWQ2gotN74Sd",
+      "lastDeploySlot": 429909554,
+      "upgradeAuthority": "7gZufwwAo17y5kg8FMyJy2phgpvv9RSdzWtdXiWHjFr8",
+      "programDataSpace": 715605,
+      "programDataLamports": 4981501680,
+      "lastDeployTime": "2026-06-30T15:58:24.000Z"
+    },
+    "donation_relay": {
+      "address": "RLAYHr9TRFcKB2ubYQhspcnXiaGpaVzNQvHytt47RZu",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "programData": "5QH8Ay11KgpRMyECYofHwAr6SzfFEGkbtPoM6eXv8V7B",
+      "lastDeploySlot": 415422992,
+      "upgradeAuthority": "9rmqZkmn3Bzd4jAL5uw3TXCgWvbHwH1VyW6fdFtimASu",
+      "programDataSpace": 830493,
+      "programDataLamports": 5781122160,
+      "lastDeployTime": "2026-04-24T20:54:08.000Z"
+    },
+    "terminal_proxy": {
+      "address": "term9YPb9mzAsABaqN71A4xdbxHmpBNZavpBiQKZzN3",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "programData": "Dw3aPJma3ZaaRgTorVE2scvJtArdQuM2WjTPZXRYwPt6",
+      "lastDeploySlot": 458774985,
+      "upgradeAuthority": "5oJNGGDxGGTt2eXuwaqtuM1AXqvWg7dCs626QnYC8xDn",
+      "programDataSpace": 1485057,
+      "programDataLamports": 7544739800,
+      "lastDeployTime": "2026-10-19T08:57:48.000Z"
+    },
+    "pump_stables_router": {
+      "address": "6Vo3245eszAb5wuqEMw8mGdbfRUdKbHhDHP5LcaGuTAB",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "programData": "5RWm5iSZx3XgcEQgEjdj7QYRsSRUhfHcAZE6fVKrNxhx",
+      "lastDeploySlot": 454846926,
+      "upgradeAuthority": "92gWFZMpGhWzVq5tjBnJxF9VnFwE3ydB2idJp9z2D9Nr",
+      "programDataSpace": 2191493,
+      "programDataLamports": 11133434680,
+      "lastDeployTime": "2026-10-09T11:01:28.000Z"
+    },
+    "pump_agent_payments_web": {
+      "address": "pUmPFn9WvfaN2WTVGnCEtJTd2ATTpvpsKRz6jVzu6u4",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "programData": "HDnL1LxH9PNHLMQYMwY4i8yqipGahs5ELTnRZ6JiuNPP",
+      "programDataExists": false
+    },
+    "transfer_hook_authority": {
+      "address": "333UA891CYPpAJAthphPT3hg1EkUBLhNFoP9HoWW3nug",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "programData": "J97GHGFf2Dvf6bAEpkXbZTc4XkXprpqQG63j8dZVJMWK",
+      "lastDeploySlot": 353292884,
+      "upgradeAuthority": null,
+      "programDataSpace": 227709,
+      "programDataLamports": 1585745520,
+      "lastDeployTime": "2025-07-14T17:43:43.000Z"
+    }
+  },
+  "onchainIdl": {
+    "pump": {
+      "address": "AYgC53tU5BbP2NAnv5nConJxAdpQZctvmZK88pu69xRs",
+      "exists": true,
+      "authority": "92gWFZMpGhWzVq5tjBnJxF9VnFwE3ydB2idJp9z2D9Nr",
+      "compressedBytes": 12801,
+      "instructions": [
+        "add_quote_control_mint",
+        "add_quote_mint",
+        "admin_cto",
+        "admin_set_idl_authority",
+        "admin_update_token_incentives",
+        "buy",
+        "buy_exact_quote_in_v2",
+        "buy_exact_sol_in",
+        "buy_v2",
+        "claim_cashback",
+        "claim_cashback_v2",
+        "claim_token_incentives",
+        "close_user_volume_accumulator",
+        "collect_creator_fee",
+        "collect_creator_fee_v2",
+        "create",
+        "create_v2",
+        "distribute_creator_fees",
+        "distribute_creator_fees_v2",
+        "distribute_fee_to_holders",
+        "extend_account",
+        "get_minimum_distributable_fee",
+        "init_user_volume_accumulator",
+        "initialize",
+        "initialize_quote_control",
+        "migrate",
+        "migrate_bonding_curve_creator",
+        "migrate_v2",
+        "remove_quote_control_mint",
+        "remove_quote_mint",
+        "sell",
+        "sell_v2",
+        "set_creator",
+        "set_mayhem_virtual_params",
+        "set_metaplex_creator",
+        "set_params",
+        "set_quote_control_admin",
+        "set_reserved_fee_recipients",
+        "set_virtual_quote_reserves",
+        "sync_user_volume_accumulator",
+        "toggle_cashback_enabled",
+        "toggle_create_v2",
+        "toggle_mayhem_mode",
+        "update_buyback_config",
+        "update_creator_fee_config",
+        "update_global_authority",
+        "update_holder_reward_config"
+      ]
+    },
+    "pump_amm": {
+      "address": "5fLnXNNoZcZt9Qku6HARM3un3Ttm2cGsR7gN9Zp1R7h3",
+      "exists": true,
+      "authority": "GUYCUEpxSkm1ccDo3LSKMR4Xpe5bgMnEZaFygWUSEVH3",
+      "compressedBytes": 6527,
+      "instructions": [
+        "admin_set_coin_creator",
+        "admin_update_token_incentives",
+        "buy",
+        "buy_exact_quote_in",
+        "claim_cashback",
+        "claim_token_incentives",
+        "close_user_volume_accumulator",
+        "collect_coin_creator_fee",
+        "create_config",
+        "create_pool",
+        "deposit",
+        "disable",
+        "extend_account",
+        "init_user_volume_accumulator",
+        "migrate_pool_coin_creator",
+        "sell",
+        "set_coin_creator",
+        "set_reserved_fee_recipients",
+        "sync_user_volume_accumulator",
+        "toggle_cashback_enabled",
+        "toggle_mayhem_mode",
+        "transfer_creator_fees_to_pump",
+        "transfer_creator_fees_to_pump_v2",
+        "update_admin",
+        "update_buyback_config",
+        "update_fee_config",
+        "withdraw"
+      ]
+    },
+    "pump_fees": {
+      "address": "6hgWp61YgGzJ9QmvxyFtLnGfA8MYgx93Hby6fdq8gG31",
+      "exists": true,
+      "authority": "GUYCUEpxSkm1ccDo3LSKMR4Xpe5bgMnEZaFygWUSEVH3",
+      "compressedBytes": 6862,
+      "instructions": [
+        "claim_social_fee_pda",
+        "claim_social_fee_pda_v2",
+        "crank_donation_fee_pda",
+        "create_donation_fee_pda",
+        "create_fee_sharing_config",
+        "create_social_fee_pda",
+        "extend_fee_config",
+        "get_fees",
+        "initialize_buyback",
+        "initialize_fee_config",
+        "initialize_fee_program_global",
+        "reset_fee_sharing_config",
+        "reset_fee_sharing_config_v2",
+        "revoke_fee_sharing_authority",
+        "set_authority",
+        "set_claim_rate_limit",
+        "set_disable_flags",
+        "set_social_claim_authority",
+        "sweep_buyback",
+        "transfer_fee_sharing_authority",
+        "update_admin",
+        "update_buyback_authority",
+        "update_buyback_claim_rate_limit",
+        "update_fee_config",
+        "update_fee_shares",
+        "update_fee_shares_v2",
+        "update_stable_fee_config",
+        "upsert_fee_tiers",
+        "upsert_stable_fee_tiers"
+      ]
+    },
+    "mayhem": {
+      "address": "Acy6P7eBsmrzz7pxakoGkxhEB9Hcr9XzSJj8RD7yvQS4",
+      "exists": false
+    },
+    "pump_agent_payments": {
+      "address": "6RS1pBCntuJza6xjvKQXAN16PRq7BBNygFeheYSoHQ6T",
+      "exists": false
+    },
+    "donation_relay": {
+      "address": "6mCmANHqUcqWCLAUtB3DFJSDv14yWPq4wXUzDhdMj3Ge",
+      "exists": true,
+      "authority": "prodARfLWf9ch7yfzQr6Z8tqiee38BHyMi6TW7puYHJ",
+      "compressedBytes": 5991,
+      "instructions": [
+        "close_donation_epoch_v1",
+        "distribute_after_just_swapping_v1",
+        "distribute_non_swap_output_mint_v1",
+        "donate_native_pubkey_config_id_v1",
+        "donate_native_v1",
+        "donate_pubkey_config_id_v1",
+        "donate_pubkey_config_id_with_payer_v1",
+        "donate_v1",
+        "just_swap_v1",
+        "swap_then_distribute_v1",
+        "upsert_mint_whitelist_v1"
+      ]
+    },
+    "terminal_proxy": {
+      "address": "EaddfVeMLzTpanUXbvUr4kmtLspB6Nvo9uMLb44ud6xj",
+      "exists": false
+    },
+    "pump_stables_router": {
+      "address": "E49E1G46oz6QA8pjw83z1tfs13C2xmriqYiDP9sxL1LG",
+      "exists": false
+    },
+    "pump_agent_payments_web": {
+      "address": "EQtNGpps5eR1mSL4jA9LyJhrFAdtepL63mY4HVrYY26x",
+      "exists": false
+    },
+    "transfer_hook_authority": {
+      "address": "2SaGcaqJoyVuaHRK58LyxWGx7cUu93oEg7PuDjzykoN2",
+      "exists": false
+    }
+  },
+  "configs": {
+    "pump.Global": {
+      "address": "4wTV1YmiEkRvAtNtsSGPtUrqRYQMe5SKy2uB4Jjaxnjf",
+      "owner": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+      "lamports": 4089842911,
+      "_bytes": 1088,
+      "initialized": true,
+      "authority": "FFWtrEQ4B4PKQoVuHYzZq8FabGkVatYzDpEVHsK5rrhF",
+      "fee_recipient": "62qc2CNXwrYqQScmEdiZFFAnJR262PxWEuNQtxfafNgV",
+      "initial_virtual_token_reserves": "1073000000000000",
+      "initial_virtual_sol_reserves": "30000000000",
+      "initial_real_token_reserves": "793100000000000",
+      "token_total_supply": "1000000000000000",
+      "fee_basis_points": "95",
+      "withdraw_authority": "39azUYFWPz3VHgKCf3VChUwbpURdCHRxjWVowf5jUJjg",
+      "enable_migrate": true,
+      "pool_migration_fee": "15000001",
+      "creator_fee_basis_points": "5",
+      "fee_recipients": [
+        "7VtfL8fvgNfhz17qKRMjzQEXgbdpnHHHQRh54R9jP2RJ",
+        "7hTckgnGnLQR6sdH7YkqFTAA7VwTfYFaZ6EhEsU3saCX",
+        "9rPYyANsfQZw3DnDmKE3YCQF5E8oD89UXoHn9JFEhJUz",
+        "AVmoTthdrX6tKt4nDjco2D775W2YK3sDhxPcMmzUAmTY",
+        "CebN5WGQ4jvEPvsVU4EoHEpgzq1VV7AbicfhtW4xC9iM",
+        "FWsW1xNtWscwNmKv6wVsU1iTzRN6wmmk3MjxRP5tT7hz",
+        "G5UZAVbAf46s7cKWoyKu8kYTip9DGTpbLZ2qa9Aq69dP"
+      ],
+      "set_creator_authority": "39azUYFWPz3VHgKCf3VChUwbpURdCHRxjWVowf5jUJjg",
+      "admin_set_creator_authority": "UqN2p5bAzBqYdHXcgB6WLtuVrdvmy9JSAtgqZb3CMKw",
+      "create_v2_enabled": true,
+      "whitelist_pda": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
+      "reserved_fee_recipient": "GesfTA3X2arioaHp8bbKdjG9vJtskViWACZoYvxp4twS",
+      "mayhem_mode_enabled": true,
+      "reserved_fee_recipients": [
+        "4budycTjhs9fD6xw62VBducVTNgMgJJ5BgtKq7mAZwn6",
+        "8SBKzEQU4nLSzcwF4a74F2iaUDQyTfjGndn6qUWBnrpR",
+        "4UQeTP1T39KZ9Sfxzo3WR5skgsaP6NZa87BAkuazLEKH",
+        "8sNeir4QsLsJdYpc9RZacohhK1Y5FLU3nC5LXgYB4aa6",
+        "Fh9HmeLNUMVCvejxCtCL2DbYaRyBFVJ5xrWkLnMH6fdk",
+        "463MEnMeGyJekNZFQSTUABBEbLnvMTALbT6ZmsxAbAdq",
+        "6AUH3WEHucYZyC61hqpqYUWVto5qA5hjHuNQ32GNnNxA"
+      ],
+      "is_cashback_enabled": true,
+      "buyback_fee_recipients": [
+        "5YxQFdt3Tr9zJLvkFccqXVUwhdTWJQc1fFg2YPbxvxeD",
+        "9M4giFFMxmFGXtc3feFzRai56WbBqehoSeRE5GK7gf7",
+        "GXPFM2caqTtQYC2cJ5yJRi9VDkpsYZXzYdwYpGnLmtDL",
+        "3BpXnfJaUTiwXnJNe7Ej1rcbzqTTQUvLShZaWazebsVR",
+        "5cjcW9wExnJJiqgLjq7DEG75Pm6JBgE1hNv4B2vHXUW6",
+        "EHAAiTxcdDwQ3U4bU6YcMsQGaekdzLS3B5SmYo46kJtL",
+        "5eHhjP8JaYkz83CWwvGU2uMUXefd3AazWGx4gpcuEEYD",
+        "A7hAgCzFw14fejgCp387JUJRMNyz4j89JKnhtKU8piqW"
+      ],
+      "buyback_basis_points": "5000",
+      "initial_virtual_quote_reserves": "4292000000",
+      "whitelisted_quote_mints": [
+        "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+      ],
+      "creator_fee_configurable": true,
+      "max_configurable_creator_fee_bps": "300",
+      "holder_reward_claim_authority": "HckQ93Xqjjo8mwt5pNPWvyCTZXQZ858rvzmm7ZRrZg9t",
+      "is_holder_reward_enabled": true,
+      "max_curve_depth": 2
+    },
+    "pump.QuoteControl": {
+      "address": "6z6GDdfb2AjR9ZhJmAUQ5cipJCVxQvLJhB2H8mCwTFBP",
+      "owner": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+      "lamports": 46715680,
+      "_bytes": 9068,
+      "admin": "2fAEoCqd6c4tX8s9sMoXTvGnmuzoczFyJsHr72Xq4YyQ",
+      "reserves_admin": "9D6H6Yp65TtwUUW7h5xwPDRzD3USvG9n3qjusYCLgz5h",
+      "_reserved": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mints": [
+        {
+          "mint": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+          "initial_virtual_quote_reserves": "4104195"
+        },
+        {
+          "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "initial_virtual_quote_reserves": "140514774"
+        },
+        {
+          "mint": "MUxEsUKSMACyw5fZf68wxf5FLnZVhtU9CwH8uNNGay1",
+          "initial_virtual_quote_reserves": "3412934"
+        },
+        {
+          "mint": "XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W",
+          "initial_virtual_quote_reserves": "428088009"
+        },
+        {
+          "mint": "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1",
+          "initial_virtual_quote_reserves": "4042313540"
+        },
+        {
+          "mint": "SKHYhSjuRWHgikq8eRKbtBbpABgJSkd7ytQV14i9EQ3",
+          "initial_virtual_quote_reserves": "21119785"
+        },
+        {
+          "mint": "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB",
+          "initial_virtual_quote_reserves": "798684916"
+        },
+        {
+          "mint": "Xs8S1uUs1zvS2p7iwtsG3b6fkhpvmwz4GYU3gWAmWHZ",
+          "initial_virtual_quote_reserves": "456777049"
+        },
+        {
+          "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
+          "initial_virtual_quote_reserves": "1516167754"
+        },
+        {
+          "mint": "SPCXxcqXj6e5dJDVNovHN8744zkbhM2bYudU45BimGb",
+          "initial_virtual_quote_reserves": "22038215"
+        },
+        {
+          "mint": "XsP7xzNPvEHS1m6qfanPUGjNmdnmsLKEoNAnHjdxxyZ",
+          "initial_virtual_quote_reserves": "2327593719"
+        },
+        {
+          "mint": "Xs7ZdzSHLU9ftNJsii5fCeJhoRWSC32SQGzGQtePxNu",
+          "initial_virtual_quote_reserves": "2063609250"
+        },
+        {
+          "mint": "Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re",
+          "initial_virtual_quote_reserves": "883417357"
+        },
+        {
+          "mint": "XsvNBAYkrDRNhA7wPHQfX3ZUXZyZLdnCQDfHZ56bzpg",
+          "initial_virtual_quote_reserves": "3764251937"
+        },
+        {
+          "mint": "XsfCC9VL4DamVGNgdJpfLXB3sBVa158Gbx8sh7NzmTk",
+          "initial_virtual_quote_reserves": "308252630751"
+        },
+        {
+          "mint": "XsbEhLAtcf6HdfpFZ5xEMdqW8nfAvcsP5bdudRLJzJp",
+          "initial_virtual_quote_reserves": "947503662"
+        },
+        {
+          "mint": "XsqE9cRRpzxcGKDXj1BJ7Xmg4GRhZoyY1KpmGSxAWT2",
+          "initial_virtual_quote_reserves": "1318368726"
+        },
+        {
+          "mint": "NKEda5nHhNGgjrE9nDdMvaEmkmJ96qqxzBVZEcKmjSg",
+          "initial_virtual_quote_reserves": "87175784"
+        },
+        {
+          "mint": "DRAMjSWR7HRfJKjRkvQWYL2bcaejaVhuxEcjf4pAY4Cw",
+          "initial_virtual_quote_reserves": "62362249"
+        },
+        {
+          "mint": "XsoBhf2ufR8fTyNSjqfU71DYGaE6Z3SUGAidpzriAA4",
+          "initial_virtual_quote_reserves": "1658607295"
+        },
+        {
+          "mint": "XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX",
+          "initial_virtual_quote_reserves": "618678997"
+        },
+        {
+          "mint": "BoTx8y9ynfdxf5ZjWtCoBVkff52qKA82ysaLU8ZM6d8T",
+          "initial_virtual_quote_reserves": "133059287"
+        },
+        {
+          "mint": "XsCPL9dNWBMvFtTmwcCA5v3xWPSMEBCszbQdiLLq6aN",
+          "initial_virtual_quote_reserves": "1016094070"
+        },
+        {
+          "mint": "TTWofwAge91oFhZs7kpQdyrVRkmevgM88xijGvQFbKo",
+          "initial_virtual_quote_reserves": "16296788"
+        },
+        {
+          "mint": "GPRR2u6NS5yBQHWGauoJ9HXgjrTH8dDsrBfTV5zAYvDH",
+          "initial_virtual_quote_reserves": "3201194026"
+        },
+        {
+          "mint": "Xsa62P5mvPszXL1krVUnU5ar38bBSVcWAB6fmPCo5Zu",
+          "initial_virtual_quote_reserves": "530716170"
+        },
+        {
+          "mint": "Xs3eBt7uRfJX8QUs4suhyU8p2M6DoUDrJyWBa8LLZsg",
+          "initial_virtual_quote_reserves": "1302739870"
+        },
+        {
+          "mint": "XsaBXg8dU5cPM6ehmVctMkVqoiRG2ZjMo1cyBJ3AykQ",
+          "initial_virtual_quote_reserves": "3597829262"
+        },
+        {
+          "mint": "Xsf9mBktVB9BSU5kf4nHxPq5hCBJ2j2ui3ecFGxPRGc",
+          "initial_virtual_quote_reserves": "14033668146"
+        },
+        {
+          "mint": "Xs6B6zawENwAbWVi7w92rjazLuAr5Az59qgWKcNb45x",
+          "initial_virtual_quote_reserves": "604333398"
+        },
+        {
+          "mint": "SNDKbwMUQvZhnLnxLduradgLHG5KrPuKwpnrkkGRhfH",
+          "initial_virtual_quote_reserves": "2398209"
+        },
+        {
+          "mint": "AMC1qwR9KhiyrQBRPrxnfo4JfMeMZqEBvt5tgTytNNoc",
+          "initial_virtual_quote_reserves": "1096277072"
+        },
+        {
+          "mint": "MRNAzXzhNcaEXJPibHEn8cd4vyekCDiivTyEwswLUCT",
+          "initial_virtual_quote_reserves": "15913604"
+        },
+        {
+          "mint": "XsgSaSvNSqLTtFuyWPBhK9196Xb9Bbdyjj4fH3cPJGo",
+          "initial_virtual_quote_reserves": "949271060"
+        },
+        {
+          "mint": "LLYuwZ33keFihgwoxXsBawy31AiRFLFSva32TYq5TvD",
+          "initial_virtual_quote_reserves": "2572028"
+        },
+        {
+          "mint": "iNTCy1qTsUEZQe3DSocLz1ZXXai34Gdw8THQh5rxFaF",
+          "initial_virtual_quote_reserves": "34502853"
+        },
+        {
+          "mint": "98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g",
+          "initial_virtual_quote_reserves": "40518462152"
+        },
+        {
+          "mint": "6UpQcMAb5xMzxc7ZfPaVMgx3KqsvKZdT5U718BzD5We2",
+          "initial_virtual_quote_reserves": "2482249455"
+        },
+        {
+          "mint": "WXMRyRZhsa19ety5erZhHg4N3xj3EVN92u94422teJp",
+          "initial_virtual_quote_reserves": "5371916821623"
+        },
+        {
+          "mint": "NBiSF3UaVUFtRzHwAfxyHsBCAZWGEKnMpewAE4oh7BG",
+          "initial_virtual_quote_reserves": "19058639"
+        },
+        {
+          "mint": "MRVLSjkR2ceUBukujaD3xCyHP1H3B2SzpsNTZF546jo",
+          "initial_virtual_quote_reserves": "13386387"
+        },
+        {
+          "mint": "BArimz1PcKZr8PcPh3tcZ2dg4S7FJLk3cw6R5F8GsHKg",
+          "initial_virtual_quote_reserves": "19579155"
+        },
+        {
+          "mint": "DJTu7vi8norVzdVAffgvb39VP7wjKeTsgaMBJrzfxvoF",
+          "initial_virtual_quote_reserves": "517761151"
+        },
+        {
+          "mint": "HiMSSzzwkZkrXJ4PGVJRdtfLaANeAztjjcgk5Dxe7Lwx",
+          "initial_virtual_quote_reserves": "118463257"
+        },
+        {
+          "mint": "BMKdM4yUxX12moFqVk195k7coMbaybd4RUKCUdm7D1Sk",
+          "initial_virtual_quote_reserves": "13176558"
+        },
+        {
+          "mint": "JNJg1znKdF712Phe7L7z52AATAvEjEytBdN2w8Lnh1Y",
+          "initial_virtual_quote_reserves": "12296670"
+        },
+        {
+          "mint": "LULUmT9VMttkfAJE236LXJcYJ2tTP7nunrSWR5G1BdS",
+          "initial_virtual_quote_reserves": "31435255"
+        },
+        {
+          "mint": "MGMuubtUEirmkhfEQdmGUh4pr7HuUdMWcZXFtpPbVJD",
+          "initial_virtual_quote_reserves": "116287781"
+        },
+        {
+          "mint": "PFER6ENqP8r8NF3CqVt4mFowxsin3V5MLidBNQFCC3x",
+          "initial_virtual_quote_reserves": "110207681"
+        },
+        {
+          "mint": "QUBTAD8C9bMU9LvmMNgKPhrmBGbHvxpu6vfWQtThxxw",
+          "initial_virtual_quote_reserves": "478352815"
+        },
+        {
+          "mint": "RDDTGbhHwVXfyCvQMXzzowKjf5qrYBZAnehoXW83ooh",
+          "initial_virtual_quote_reserves": "23869108"
+        },
+        {
+          "mint": "RcZmt84VMJv9bDhKqmw1uWDahYrUT468VwAChTnfD8p",
+          "initial_virtual_quote_reserves": "265154239"
+        },
+        {
+          "mint": "SH55hfaipFAbwT42nQYhRoM5o5t61QpkmJ6p62vXB3m",
+          "initial_virtual_quote_reserves": "19758026"
+        },
+        {
+          "mint": "SNAPcESrvnH8yUdgeMF6xm1hym9b6hW6s8YeqeHdZFz",
+          "initial_virtual_quote_reserves": "544879622"
+        },
+        {
+          "mint": "UPSqUeMHcWbkdg784XuBUEF9DtySSnW9ur5LAVdcuB9",
+          "initial_virtual_quote_reserves": "31020707"
+        },
+        {
+          "mint": "EicWvteVi2fWepEzS3FYWsnuPoP6caZfjnKqNvydLjCH",
+          "initial_virtual_quote_reserves": "108673075121"
+        },
+        {
+          "mint": "taoC6xyv2v8tDLcev4uaGUgV4vdQsWJrGft2kcBRrBY",
+          "initial_virtual_quote_reserves": "12801669473"
+        },
+        {
+          "mint": "DoGEV7LASBkQbibMc5k5vKnTZoMg423GpJ5QtJEGfm7R",
+          "initial_virtual_quote_reserves": "4167167403217"
+        },
+        {
+          "mint": "Morpho2VPeTr2E1Jx6monxCzF7mqwUnjz74RdwLXYyP",
+          "initial_virtual_quote_reserves": "148815114241"
+        },
+        {
+          "mint": "SV151D5pjygAKA8aJJcKzm4wFnRX5G92Fye94jQJk7g",
+          "initial_virtual_quote_reserves": "13425309922"
+        },
+        {
+          "mint": "PEAQjk7SRS6rXHVFFmpRr7zrC4g5ZuEebpwTxvaLr3b",
+          "initial_virtual_quote_reserves": "94801317470227"
+        },
+        {
+          "mint": "5eyib4qghYGHNh7VvxSFGYLFJSanjq9hug9fR52kksnm",
+          "initial_virtual_quote_reserves": "7969222159045"
+        },
+        {
+          "mint": "poNSfquKq512ApeYjVghwViSun4x1MhCqHVH2Paq4jN",
+          "initial_virtual_quote_reserves": "1077081526503"
+        },
+        {
+          "mint": "SLXdx4BUt2v9uJQNzWqSfzTJ9UKLUDsvxHFMEEdrfgq",
+          "initial_virtual_quote_reserves": "64684780216"
+        },
+        {
+          "mint": "chipCAT7vi5CZtbZsn9z7iMPXvFwyAnKz3QFu8XVuHm",
+          "initial_virtual_quote_reserves": "60763576436972"
+        },
+        {
+          "mint": "Bi11Je4MH3PpyCNiuTAepRbsA5U6DK3DJy79ZFthddX",
+          "initial_virtual_quote_reserves": "52577716846803"
+        },
+        {
+          "mint": "CashcatZMRn4Jv8sPQZUSsbTLi2PcPe1ssqbHcnaJqSS",
+          "initial_virtual_quote_reserves": "3161638142058"
+        },
+        {
+          "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+          "initial_virtual_quote_reserves": "752695533287"
+        },
+        {
+          "mint": "BULL151gUXcFV5wXEUqu9Am2L7Qt4bTJRLRuAUjkcspC",
+          "initial_virtual_quote_reserves": "594988940"
+        },
+        {
+          "mint": "CZEB3WNZuF2Yz1z2H81RcCk8T7fsw82KB33zqamASVsg",
+          "initial_virtual_quote_reserves": "3312033"
+        },
+        {
+          "mint": "DELL2aRKQz7DMq5DrKLtkn47ZCnbxXPZXrSGbkmd13wy",
+          "initial_virtual_quote_reserves": "6521085"
+        },
+        {
+          "mint": "9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump",
+          "initial_virtual_quote_reserves": "49304662453"
+        },
+        {
+          "mint": "DKNGQFNGQmoBdXSRGKJ8tTu7uPDasw5JDcfMmWniNfow",
+          "initial_virtual_quote_reserves": "158666939"
+        },
+        {
+          "mint": "oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp",
+          "initial_virtual_quote_reserves": "1878141192318"
+        },
+        {
+          "mint": "GRNDYDpqwpCm6jVxpbh4xT5AM4r3p391qYsKTHqgaET2",
+          "initial_virtual_quote_reserves": "253908399"
+        },
+        {
+          "mint": "DNUTsCvKbKwu2RM72cUuW3TD9YpzArzACcqYQssjPLSk",
+          "initial_virtual_quote_reserves": "1140481206"
+        },
+        {
+          "mint": "WENAZ2WyPbmgvUcKfQ8hyMDfBQP9bZ65hsZ5KTFrRGZ",
+          "initial_virtual_quote_reserves": "534856011"
+        },
+        {
+          "mint": "HTZsLG4zqaNvWMwXSLHH3GG5KyJpKwpBRsKVdMG6hvzP",
+          "initial_virtual_quote_reserves": "1656023651"
+        },
+        {
+          "mint": "SPHRp8cZaSQBTp1KMNP4V1X821SXhXWt4Q2yLdyHzju",
+          "initial_virtual_quote_reserves": "28524997"
+        },
+        {
+          "mint": "CrAr4RRJMBVwRsZtT62pEhfA9H5utymC2mVx8e7FreP2",
+          "initial_virtual_quote_reserves": "15222948415580"
+        },
+        {
+          "mint": "Xs2yquAgsHByNzx68WJC55WHjHBvG9JsMB7CWjTLyPy",
+          "initial_virtual_quote_reserves": "88412435902"
+        },
+        {
+          "mint": "AavE1kKKnesPw4MuRJmJ9jZs9QzEE8CPxQ3ViczUDfc1",
+          "initial_virtual_quote_reserves": "2426441748"
+        },
+        {
+          "mint": "2qEHjDLDLbuBgRYvsxhc5D6uDWAivNFZGan56P1tpump",
+          "initial_virtual_quote_reserves": "78494755042"
+        },
+        {
+          "mint": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
+          "initial_virtual_quote_reserves": "84825901544"
+        },
+        {
+          "mint": "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+          "initial_virtual_quote_reserves": "112175686500"
+        },
+        {
+          "mint": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "initial_virtual_quote_reserves": "85807425988"
+        },
+        {
+          "mint": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+          "initial_virtual_quote_reserves": "107073162881"
+        },
+        {
+          "mint": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+          "initial_virtual_quote_reserves": "206049829663"
+        },
+        {
+          "mint": "Eg2ymQ2aQqjMcibnmTt8erC6Tvk9PVpJZCxvVPJz2agu",
+          "initial_virtual_quote_reserves": "193785609807"
+        },
+        {
+          "mint": "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump",
+          "initial_virtual_quote_reserves": "318244174095"
+        },
+        {
+          "mint": "HgBRWfYxEfvPhtqkaeymCQtHCrKE46qQ43pKe8HCpump",
+          "initial_virtual_quote_reserves": "277433242298"
+        },
+        {
+          "mint": "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
+          "initial_virtual_quote_reserves": "233175635887"
+        },
+        {
+          "mint": "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2",
+          "initial_virtual_quote_reserves": "426541065072"
+        },
+        {
+          "mint": "Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump",
+          "initial_virtual_quote_reserves": "333070045599"
+        },
+        {
+          "mint": "CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump",
+          "initial_virtual_quote_reserves": "1528804764509"
+        },
+        {
+          "mint": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
+          "initial_virtual_quote_reserves": "563860441048"
+        },
+        {
+          "mint": "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump",
+          "initial_virtual_quote_reserves": "374965968515"
+        },
+        {
+          "mint": "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump",
+          "initial_virtual_quote_reserves": "682858546615"
+        },
+        {
+          "mint": "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump",
+          "initial_virtual_quote_reserves": "454575298519"
+        },
+        {
+          "mint": "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump",
+          "initial_virtual_quote_reserves": "957994062859"
+        },
+        {
+          "mint": "he1iusmfkpAdwvxLNGV8Y1iSbj4rUy6yMhEA3fotn9A",
+          "initial_virtual_quote_reserves": "27302355658"
+        },
+        {
+          "mint": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+          "initial_virtual_quote_reserves": "227721491387"
+        },
+        {
+          "mint": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "initial_virtual_quote_reserves": "106274323547926"
+        },
+        {
+          "mint": "EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm",
+          "initial_virtual_quote_reserves": "18127414916"
+        },
+        {
+          "mint": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+          "initial_virtual_quote_reserves": "1906763892"
+        },
+        {
+          "mint": "METvsvVRapdj9cFLzq4Tr43xK4tAjQfwX76z3n6mWQL",
+          "initial_virtual_quote_reserves": "10341620484"
+        },
+        {
+          "mint": "8XtRWb4uAAJFMP4QQhoYYCWR6XXb7ybcCdiqPwz9s5WS",
+          "initial_virtual_quote_reserves": "957790953974"
+        },
+        {
+          "mint": "GkyPYa7NnCFbduLknCfBfP7p8564X1VZhwZYJ6CZpump",
+          "initial_virtual_quote_reserves": "3793765523102"
+        },
+        {
+          "mint": "J3NKxxXZcnNiMjKw9hYb2K4LUxgwB6t1FtPtQVsv3KFr",
+          "initial_virtual_quote_reserves": "842286080065"
+        },
+        {
+          "mint": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
+          "initial_virtual_quote_reserves": "179819909512"
+        },
+        {
+          "mint": "2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv",
+          "initial_virtual_quote_reserves": "420735155298"
+        },
+        {
+          "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+          "initial_virtual_quote_reserves": "1855646753"
+        },
+        {
+          "mint": "A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump",
+          "initial_virtual_quote_reserves": "3234898428303"
+        },
+        {
+          "mint": "CB9dDufT3ZuQXqqSfa1c5kY935TEreyBw9XJXxHKpump",
+          "initial_virtual_quote_reserves": "1384728986056"
+        },
+        {
+          "mint": "H8xQ6poBjB9DTPMDTKWzWPrnxu4bDEhybxiouF8Ppump",
+          "initial_virtual_quote_reserves": "1731340024374"
+        },
+        {
+          "mint": "9AvytnUKsLxPxFHFqS6VLxaxt5p6BhYNr53SD2Chpump",
+          "initial_virtual_quote_reserves": "1908348269163"
+        },
+        {
+          "mint": "76EDL5qNcte2ZH29quTaFzagXjWAEY83CATEjyA6pump",
+          "initial_virtual_quote_reserves": "2277929497445"
+        },
+        {
+          "mint": "Tqj8yFmagrg7oorpQkVGYR52r96RFTamvWfth9bpump",
+          "initial_virtual_quote_reserves": "9507112859142"
+        },
+        {
+          "mint": "8PzFWyLpCVEmbZmVJcaRTU5r69XKJx1rd7YGpWvnpump",
+          "initial_virtual_quote_reserves": "1778934944320"
+        },
+        {
+          "mint": "BcHEaaTCvycPwwsJ9yQTXdHP9X2gCLkznDbZ8VySpump",
+          "initial_virtual_quote_reserves": "2280618200979"
+        },
+        {
+          "mint": "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR",
+          "initial_virtual_quote_reserves": "62948708126118"
+        },
+        {
+          "mint": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+          "initial_virtual_quote_reserves": "22215637097362"
+        },
+        {
+          "mint": "FLWSojG1gB5VStYR3Sb4nQFRt43UBYkqih1j2CpVLqgd",
+          "initial_virtual_quote_reserves": "1128177772"
+        },
+        {
+          "mint": "LinkhB3afbBKb2EQQu7s7umdZceV3wcvAUJhQAfQ23L",
+          "initial_virtual_quote_reserves": "281903501392"
+        },
+        {
+          "mint": "SCHHJ3jRdSjeFEVAaLrnYdx3Brphn92Ys7z1qkiCtPX",
+          "initial_virtual_quote_reserves": "144558638"
+        },
+        {
+          "mint": "8wxkvAfEns76yBzu4MnbV7VnXWjg3iDPA9uwAQ6cpump",
+          "initial_virtual_quote_reserves": "6786963134568"
+        },
+        {
+          "mint": "PTNzAfFAB4LvoUQEUUGrFMyUoRLExMYjH6CcfyQfsVP",
+          "initial_virtual_quote_reserves": "673905025"
+        },
+        {
+          "mint": "FLYRq3en8r2Z69gN3KyAnDrvnitEJNkwPYY7favinHeD",
+          "initial_virtual_quote_reserves": "166027545"
+        },
+        {
+          "mint": "BRVaZKg6J9iF2BEsdpsxJ9NyvN9PPxPZuoQUX2v8qqkk",
+          "initial_virtual_quote_reserves": "80138152"
+        },
+        {
+          "mint": "AMD8XwJXgQ9WV45Wyj9yFLejxzf2J6VM1PJY8bJEjeES",
+          "initial_virtual_quote_reserves": "6406987"
+        },
+        {
+          "mint": "LUV9GB51PNZNRyzzyYK3rtqFfvDvWtRiXZ34wVq2HrX",
+          "initial_virtual_quote_reserves": "75369874"
+        },
+        {
+          "mint": "WULFeyfrj1VJKD9HhRTcW8R4g5HefUA11HDEdBv2WxD",
+          "initial_virtual_quote_reserves": "256679616"
+        },
+        {
+          "mint": "RUMsPfFZFnN1ZmGANwP7FNMJMjKH4m9RiMePrtVtLe7",
+          "initial_virtual_quote_reserves": "564093116"
+        },
+        {
+          "mint": "98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump",
+          "initial_virtual_quote_reserves": "1007149886962"
+        },
+        {
+          "mint": "USNv3NkKA27Dh4nsHJDPhW4VoEcTQmjoZyJt2dqdwFu",
+          "initial_virtual_quote_reserves": "19967874"
+        },
+        {
+          "mint": "PEPEqnuuCDbBC89p1u9vpnP1KQ2oj1xTcQBsjt9X55m",
+          "initial_virtual_quote_reserves": "6884579923333"
+        },
+        {
+          "mint": "BBosJLw8ZzoATiEyywiifx7AgmrD2Cm3XjFWbhbRhChy",
+          "initial_virtual_quote_reserves": "348518943"
+        },
+        {
+          "mint": "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+          "initial_virtual_quote_reserves": "63359721788"
+        },
+        {
+          "mint": "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+          "initial_virtual_quote_reserves": "692706228729"
+        },
+        {
+          "mint": "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+          "initial_virtual_quote_reserves": "503950074057"
+        },
+        {
+          "mint": "DvdmEnztCmXwBnAbedD48XVGZJSxq31zNvnyftXdpump",
+          "initial_virtual_quote_reserves": "2703386828349"
+        },
+        {
+          "mint": "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump",
+          "initial_virtual_quote_reserves": "441552994357"
+        },
+        {
+          "mint": "3ZLekZYq2qkZiSpnSvabjit34tUkjSwD1JFuW9as9wBG",
+          "initial_virtual_quote_reserves": "701000708672"
+        },
+        {
+          "mint": "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump",
+          "initial_virtual_quote_reserves": "487915189885"
+        },
+        {
+          "mint": "1NJMqVM4PadjuzYmeB7zV7q7DV8oB3ExaQCd9x6KsLz",
+          "initial_virtual_quote_reserves": "413449072426"
+        },
+        {
+          "mint": "AywAYdNJnSLSXwKWYxDciPjqGRnwp4iZdQptuuQTpump",
+          "initial_virtual_quote_reserves": "1276906943687"
+        },
+        {
+          "mint": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+          "initial_virtual_quote_reserves": "3347020081883"
+        },
+        {
+          "mint": "uniHfuPhEQSrtpzXpJZDCSq53yaejKKpNhFUiKoHKHV",
+          "initial_virtual_quote_reserves": "46150208933"
+        },
+        {
+          "mint": "FWDtiB5fXHdVAewPqvHPL2dh4aBC1C6GacQbePoQXKjz",
+          "initial_virtual_quote_reserves": "474714413"
+        },
+        {
+          "mint": "BABANGA4JE7Kkam4nTrALAwAVgsNJUuFJnnkF7S16BZp",
+          "initial_virtual_quote_reserves": "32544162"
+        },
+        {
+          "mint": "4nV5gNwwP68zUDat26ySChREqVaQaLudfJBkSgEzpump",
+          "initial_virtual_quote_reserves": "637460068898"
+        },
+        {
+          "mint": "CYPHuMmCL1GxJWa2tsPhLKykC7GrHJTCHwbXD4g5uawK",
+          "initial_virtual_quote_reserves": "1039231453"
+        },
+        {
+          "mint": "ARBzQTYDCW2KnVEjs1Mc81LekB1ibVFZKbSVmorkoT9d",
+          "initial_virtual_quote_reserves": "1936475496783"
+        },
+        {
+          "mint": "H74CYmXgMkYHYuSRsZt6RJb4NYp2u72Vw8BS5huApump",
+          "initial_virtual_quote_reserves": "1367370267913"
+        },
+        {
+          "mint": "DNhQZ1CE9qZ2FNrVhsCXwQJ2vZG8ufZkcYakTS5Jpump",
+          "initial_virtual_quote_reserves": "1853215933334"
+        },
+        {
+          "mint": "Ge87EtsjwRQbHaqQmKRno69RFTwh9bfSsm99XNxTpump",
+          "initial_virtual_quote_reserves": "1691643586946"
+        },
+        {
+          "mint": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
+          "initial_virtual_quote_reserves": "251680358"
+        },
+        {
+          "mint": "LMT3i1BHgixFqPUgcyteJhnEz2dpy9i3cYy4pi9BoeV",
+          "initial_virtual_quote_reserves": "5279043"
+        },
+        {
+          "mint": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+          "initial_virtual_quote_reserves": "10509886911"
+        },
+        {
+          "mint": "RBLXDGRD64AtRamHMFVcjqne3Ar7NLWtFtYNtsrf1cE",
+          "initial_virtual_quote_reserves": "61162033"
+        },
+        {
+          "mint": "suifhC9gU1VbJAPYPTBkHJyyyStKGLLYPVDTmPoqbvA",
+          "initial_virtual_quote_reserves": "350576148255"
+        },
+        {
+          "mint": "URARfsinxCRw4JpvQhuT4CxavdZXZEMjv9ZwWmWpwag",
+          "initial_virtual_quote_reserves": "91521355"
+        },
+        {
+          "mint": "CzLTZppPdZtTjyq3WGpHLstoc3GLhu7zH5Zg6xUa6Gv5",
+          "initial_virtual_quote_reserves": "43216124"
+        },
+        {
+          "mint": "NQ5hSuXQZrbnrwcDVk2qN73njjd3E3v3badYHnj5thF",
+          "initial_virtual_quote_reserves": "98839176"
+        },
+        {
+          "mint": "C1MHyoTJpRTeS9AQCyspNVu2EWAYCZwmJ1jNkEArFP1f",
+          "initial_virtual_quote_reserves": "26920603983108"
+        },
+        {
+          "mint": "ARMbSB1MBRQrY6PNMao1HdQ431VafC6JRJCsGZ2Yv3iJ",
+          "initial_virtual_quote_reserves": "14443925"
+        },
+        {
+          "mint": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
+          "initial_virtual_quote_reserves": "19532198459"
+        },
+        {
+          "mint": "739dnZEG4yaBWFsY8L8ZwrfhGG6dhtCSercW8Umspump",
+          "initial_virtual_quote_reserves": "340580054365"
+        },
+        {
+          "mint": "CbyTNf7UPzvewHh4Zp6umogM2RWahhmGRJWLJnPwpump",
+          "initial_virtual_quote_reserves": "9721184710932"
+        },
+        {
+          "mint": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+          "initial_virtual_quote_reserves": "24885984888"
+        },
+        {
+          "mint": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+          "initial_virtual_quote_reserves": "102431138947"
+        },
+        {
+          "mint": "CRWVJeR2yEZuDUKYfGuKCHvLz8ywn4LGvovHfy5WiFmi",
+          "initial_virtual_quote_reserves": "54753169"
+        },
+        {
+          "mint": "4Zp52aF4hZi9fzH19xpbWKYKQvgLyCN67KFbrQDqeTKh",
+          "initial_virtual_quote_reserves": "42405466708788"
+        },
+        {
+          "mint": "RENzhrJQgmAnfcLhU1U5XwAMc6TC15UA6jCbPBaasnj",
+          "initial_virtual_quote_reserves": "117795282"
+        },
+        {
+          "mint": "SQQQAa3gUxgnqcEsdjPA4RQNQBgB97TnG2hJhk2WaGE",
+          "initial_virtual_quote_reserves": "89537853"
+        },
+        {
+          "mint": "7GUnr7krtQhJwd6ASY2VUprd9t4c64zcgCsjdmZepump",
+          "initial_virtual_quote_reserves": "169574374510706"
+        },
+        {
+          "mint": "cbLTC4T5NpzSUtQ7ekgEMZGaUPVJY1ko6BUikqa4gGf",
+          "initial_virtual_quote_reserves": "5774933926"
+        },
+        {
+          "mint": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+          "initial_virtual_quote_reserves": "2253560377724"
+        },
+        {
+          "mint": "CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU",
+          "initial_virtual_quote_reserves": "7781018882641"
+        },
+        {
+          "mint": "Hh3oTaqDCKKfdBgsQEvxp9sUwyNf8x9qmKqEMLBWpump",
+          "initial_virtual_quote_reserves": "2200834952590"
+        },
+        {
+          "mint": "EWY4owSJYMpwN33qGDu5gGxpkQkpMJu8ZUsQJaNZG5dv",
+          "initial_virtual_quote_reserves": "20340011"
+        },
+        {
+          "mint": "N7Q5fYX7YRnDQksfdBKnoUb3awm92n7QNAD35X3Rq1X",
+          "initial_virtual_quote_reserves": "373341316"
+        },
+        {
+          "mint": "cbADAmv9issuPfhFwyQG3xac4DGPd1LDSt1oz7vwJsg",
+          "initial_virtual_quote_reserves": "15781962904"
+        },
+        {
+          "mint": "RKLBnAXGqv31iZomqsuAWkQm1aqC7JwwvbCfzGdqAhz",
+          "initial_virtual_quote_reserves": "55860630"
+        },
+        {
+          "mint": "NFLX7qV57zuVxCoHy3s1jiGZyALraLNwttbxdvmYJLJ",
+          "initial_virtual_quote_reserves": "52814953"
+        },
+        {
+          "mint": "BEBVfXZ8uCxRBuunEbW9wcq9r7W9ySNo14oJBJkDgpZx",
+          "initial_virtual_quote_reserves": "14716941"
+        },
+        {
+          "mint": "qntUzPUsJ51abNP7VYNxkmsQ4RnvEZAhavUxsCxpxH4",
+          "initial_virtual_quote_reserves": "1640717633"
+        },
+        {
+          "mint": "ondohH8Vssxiqcy5u6Efi4AYN17KZrzQtv2a91dnrgW",
+          "initial_virtual_quote_reserves": "782870365772"
+        },
+        {
+          "mint": "PUSAG1stksTcAoK9MjinEHUwAYRJsbovywYCk37m6hy",
+          "initial_virtual_quote_reserves": "1726430864"
+        },
+        {
+          "mint": "BLKKYfF41c6xRPrtX1rdYbxLE1xxEdZUnxQsB5hcZ8Nf",
+          "initial_virtual_quote_reserves": "2912697"
+        },
+        {
+          "mint": "7VertkgF9KLhxxJXHX6uaWuoYZTP9LdGj2bWmVXVpump",
+          "initial_virtual_quote_reserves": "6742035333376"
+        },
+        {
+          "mint": "H7TuvDxEKygh27zGfGcjKG8JGWgrbyKpPtvJEpGosfas",
+          "initial_virtual_quote_reserves": "175984201148175"
+        },
+        {
+          "mint": "shib5gSoVKPjwkXrxRk7SbQFzb2R9rQB3TgQWYX4RwW",
+          "initial_virtual_quote_reserves": "6656764889220"
+        },
+        {
+          "mint": "EWZzCki1igp2y73UyUM4RCG4QUVMQAtnrQUVNaDHzDxJ",
+          "initial_virtual_quote_reserves": "96397281"
+        },
+        {
+          "mint": "5tCju6YNxHq5zrA6tGndr6F7TK42mpUFmeE31cSFpump",
+          "initial_virtual_quote_reserves": "1704463477003"
+        },
+        {
+          "mint": "CscZaq5twomhUkvCY8Jdd1tge32L4Yj9FbkFFEZQpump",
+          "initial_virtual_quote_reserves": "133431017665828"
+        },
+        {
+          "mint": "CBRSFBbQPpp77NpMcwbTN6fhBHmZM94oFLJvruytw4Fi",
+          "initial_virtual_quote_reserves": "27250257"
+        },
+        {
+          "mint": "VVV4UdRywr7SLafPHzqXwRCw7myXkmgCtitXUvj8g8c",
+          "initial_virtual_quote_reserves": "12785536788"
+        },
+        {
+          "mint": "RACEyWiM2ztEZcJx2AHXU2eWjhxU57x3vXn92b39dLD",
+          "initial_virtual_quote_reserves": "8401223"
+        },
+        {
+          "mint": "WLDTE73PPdfFFjhpBz8Yuhvx5N45gvgEgyMXqwa3rFn",
+          "initial_virtual_quote_reserves": "750254469019"
+        },
+        {
+          "mint": "ASTERYpc2EhivYWSbtuWPuCMdXtZGmHwtH93NqYVw45Z",
+          "initial_virtual_quote_reserves": "464906759232"
+        },
+        {
+          "mint": "RUKx7nBgm94pwRPbVm99xYVdcTDTUyGs8Cw3VSYQXHf",
+          "initial_virtual_quote_reserves": "261704655"
+        },
+        {
+          "mint": "85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ",
+          "initial_virtual_quote_reserves": "263356040270"
+        },
+        {
+          "mint": "HsRpHQn6VbyMs5b5j5SV6xQ2VvpvvCCzu19GjytVSCoz",
+          "initial_virtual_quote_reserves": "71400239784565"
+        },
+        {
+          "mint": "XPLTrL1ZH3tZJBdFWbbtrNjK9qoqZWfuhQJnXibbdfT",
+          "initial_virtual_quote_reserves": "4591299345921"
+        },
+        {
+          "mint": "pSo1f9nQXWgXibFtKf7NWYxb5enAM4qfP6UJSiXRQfL",
+          "initial_virtual_quote_reserves": "28708543750"
+        },
+        {
+          "mint": "CMGi497VQA9RiHVWpQi5B847vN8RLaEwcMhB5kEUhkAQ",
+          "initial_virtual_quote_reserves": "119143057"
+        },
+        {
+          "mint": "TSM2Hiuf7Z9REcwZFQvsBEekBYCYziWBABfFnj6V6gQ",
+          "initial_virtual_quote_reserves": "7933257"
+        },
+        {
+          "mint": "AVGoo4BQGsEfAmu4HU2deZTaTmLoqB3q3EzKXqAANGYD",
+          "initial_virtual_quote_reserves": "10175600"
+        },
+        {
+          "mint": "UVXY4ojmAMTaPwUmrRmcuxWHjMHCbz3BxX2RBMzjYKx",
+          "initial_virtual_quote_reserves": "173906266"
+        },
+        {
+          "mint": "CHWYHz2zfKajomqPV9it26n7vu7AgZZfqGHXCWtGWuJg",
+          "initial_virtual_quote_reserves": "148480020"
+        },
+        {
+          "mint": "Pre9atBqkocK1QngFy7Q7zvyQictEFpXdLi6bZ2qnYy",
+          "initial_virtual_quote_reserves": "46878078894"
+        },
+        {
+          "mint": "Pre8AREmFPtoJFT8mQSXQLh56cwJmM7CFDRuoGBZiUP",
+          "initial_virtual_quote_reserves": "23522539662"
+        },
+        {
+          "mint": "PreLWGkkeqG1s4HEfFZSy9moCrJ7btsHuUtfcCeoRua",
+          "initial_virtual_quote_reserves": "3618481035"
+        },
+        {
+          "mint": "PreZad18qfPtbxNpMtMuAuX2zVpvkEU8DnJx56faCWd",
+          "initial_virtual_quote_reserves": "18665863660"
+        },
+        {
+          "mint": "PrekqLJvJ3qVdXmBGDiexvwUTF4rLFDa6HWS4HJbw9S",
+          "initial_virtual_quote_reserves": "8027403257"
+        },
+        {
+          "mint": "PresTj4Yc2bAR197Er7wz4UUKSfqt6FryBEdAriBoQB",
+          "initial_virtual_quote_reserves": "19815778382"
+        },
+        {
+          "mint": "Pren1FvFX6J3E4kXhJuCiAD5aDmGEb7qJRncwA8Lkhw",
+          "initial_virtual_quote_reserves": "3239343247"
+        },
+        {
+          "mint": "PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF",
+          "initial_virtual_quote_reserves": "2185258528"
+        },
+        {
+          "mint": "WLFinEv6ypjkczcS83FZqFpgFZYwQXutRbxGe7oC16g",
+          "initial_virtual_quote_reserves": "61236297865"
+        },
+        {
+          "mint": "ABNB56TteaTZG1S3DY2W8VMncQmHMvNCGaZgAba49CLP",
+          "initial_virtual_quote_reserves": "19006940"
+        },
+        {
+          "mint": "AMZNw7cwU9L9c7ewZXxTws2PwQYxBGm2Rxg3FLDBJz9B",
+          "initial_virtual_quote_reserves": "13271237"
+        },
+        {
+          "mint": "NVDAVuiB7hwd3m5Wa1JuHNovPaPG6BH1QNztbKFxNjv",
+          "initial_virtual_quote_reserves": "15529383"
+        },
+        {
+          "mint": "AAPLEDt8RpzPgXyhvFzkMBofvFSQw9gpeMCoUdPdLnB8",
+          "initial_virtual_quote_reserves": "9353838"
+        }
+      ]
+    },
+    "pump.GlobalVolumeAccumulator": {
+      "address": "Hq2wp8uJ9jCPsYgNHex8RtqdvMPfVGoYwjvF1ATiwn2Y",
+      "owner": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+      "lamports": 17016138,
+      "_bytes": 600,
+      "start_time": "0",
+      "end_time": "0",
+      "seconds_in_a_day": "0",
+      "mint": "11111111111111111111111111111111",
+      "total_token_supply": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "sol_volumes": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "pump_amm.GlobalConfig": {
+      "address": "ADyA8hdefvWN2dbGGWFotbzWxrAvLW83WG6QCVXvJKqw",
+      "owner": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "lamports": 9272823,
+      "_bytes": 949,
+      "admin": "FFWtrEQ4B4PKQoVuHYzZq8FabGkVatYzDpEVHsK5rrhF",
+      "lp_fee_basis_points": "20",
+      "protocol_fee_basis_points": "5",
+      "disable_flags": 0,
+      "protocol_fee_recipients": [
+        "62qc2CNXwrYqQScmEdiZFFAnJR262PxWEuNQtxfafNgV",
+        "7VtfL8fvgNfhz17qKRMjzQEXgbdpnHHHQRh54R9jP2RJ",
+        "7hTckgnGnLQR6sdH7YkqFTAA7VwTfYFaZ6EhEsU3saCX",
+        "9rPYyANsfQZw3DnDmKE3YCQF5E8oD89UXoHn9JFEhJUz",
+        "AVmoTthdrX6tKt4nDjco2D775W2YK3sDhxPcMmzUAmTY",
+        "FWsW1xNtWscwNmKv6wVsU1iTzRN6wmmk3MjxRP5tT7hz",
+        "G5UZAVbAf46s7cKWoyKu8kYTip9DGTpbLZ2qa9Aq69dP",
+        "JCRGumoE9Qi5BBgULTgdgTLjSgkCMSbF62ZZfGs84JeU"
+      ],
+      "coin_creator_fee_basis_points": "5",
+      "admin_set_coin_creator_authority": "UqN2p5bAzBqYdHXcgB6WLtuVrdvmy9JSAtgqZb3CMKw",
+      "whitelist_pda": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
+      "reserved_fee_recipient": "GesfTA3X2arioaHp8bbKdjG9vJtskViWACZoYvxp4twS",
+      "mayhem_mode_enabled": true,
+      "reserved_fee_recipients": [
+        "4budycTjhs9fD6xw62VBducVTNgMgJJ5BgtKq7mAZwn6",
+        "8SBKzEQU4nLSzcwF4a74F2iaUDQyTfjGndn6qUWBnrpR",
+        "4UQeTP1T39KZ9Sfxzo3WR5skgsaP6NZa87BAkuazLEKH",
+        "8sNeir4QsLsJdYpc9RZacohhK1Y5FLU3nC5LXgYB4aa6",
+        "Fh9HmeLNUMVCvejxCtCL2DbYaRyBFVJ5xrWkLnMH6fdk",
+        "463MEnMeGyJekNZFQSTUABBEbLnvMTALbT6ZmsxAbAdq",
+        "6AUH3WEHucYZyC61hqpqYUWVto5qA5hjHuNQ32GNnNxA"
+      ],
+      "is_cashback_enabled": true,
+      "buyback_fee_recipients": [
+        "5YxQFdt3Tr9zJLvkFccqXVUwhdTWJQc1fFg2YPbxvxeD",
+        "9M4giFFMxmFGXtc3feFzRai56WbBqehoSeRE5GK7gf7",
+        "GXPFM2caqTtQYC2cJ5yJRi9VDkpsYZXzYdwYpGnLmtDL",
+        "3BpXnfJaUTiwXnJNe7Ej1rcbzqTTQUvLShZaWazebsVR",
+        "5cjcW9wExnJJiqgLjq7DEG75Pm6JBgE1hNv4B2vHXUW6",
+        "EHAAiTxcdDwQ3U4bU6YcMsQGaekdzLS3B5SmYo46kJtL",
+        "5eHhjP8JaYkz83CWwvGU2uMUXefd3AazWGx4gpcuEEYD",
+        "A7hAgCzFw14fejgCp387JUJRMNyz4j89JKnhtKU8piqW"
+      ],
+      "buyback_basis_points": "5000",
+      "boost_authority": "HTVZVEQMBsNanubDPTs3CxDAEGNFQHJY8c1441iy2S5r",
+      "boost_enabled": true,
+      "creator_fee_configurable": true,
+      "max_configurable_creator_fee_bps": "300"
+    },
+    "pump_amm.GlobalVolumeAccumulator": {
+      "address": "C2aFPdENg4A2HQsmrd5rTw5TaYBX5Ku887cWjbFKtZpw",
+      "owner": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "lamports": 28668918,
+      "_bytes": 600,
+      "start_time": "0",
+      "end_time": "0",
+      "seconds_in_a_day": "0",
+      "mint": "11111111111111111111111111111111",
+      "total_token_supply": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "sol_volumes": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "pump_fees.FeeConfig(pump)": {
+      "address": "8Wf5TiAheLUqBrKXeYg2JtAFFMWtKdG2BSFgqUcPVwTt",
+      "owner": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+      "lamports": 37292293,
+      "_bytes": 4097,
+      "bump": 253,
+      "admin": "FFWtrEQ4B4PKQoVuHYzZq8FabGkVatYzDpEVHsK5rrhF",
+      "flat_fees": {
+        "lp_fee_bps": "0",
+        "protocol_fee_bps": "95",
+        "creator_fee_bps": "30"
+      },
+      "fee_tiers": [
+        {
+          "market_cap_lamports_threshold": "0",
+          "fees": {
+            "lp_fee_bps": "0",
+            "protocol_fee_bps": "95",
+            "creator_fee_bps": "30"
+          }
+        }
+      ],
+      "stable_fee_tiers": [
+        {
+          "market_cap_lamports_threshold": "0",
+          "fees": {
+            "lp_fee_bps": "0",
+            "protocol_fee_bps": "95",
+            "creator_fee_bps": "30"
+          }
+        }
+      ],
+      "exotic_flat_fees": {
+        "lp_fee_bps": "0",
+        "protocol_fee_bps": "95",
+        "creator_fee_bps": "30"
+      }
+    },
+    "pump_fees.FeeConfig(pump_amm)": {
+      "address": "5PHirr8joyTMp9JMm6nW7hNDVyEYdkzDqazxPD7RaTjx",
+      "owner": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+      "lamports": 33103977,
+      "_bytes": 4097,
+      "bump": 255,
+      "admin": "FFWtrEQ4B4PKQoVuHYzZq8FabGkVatYzDpEVHsK5rrhF",
+      "flat_fees": {
+        "lp_fee_bps": "25",
+        "protocol_fee_bps": "5",
+        "creator_fee_bps": "0"
+      },
+      "fee_tiers": [
+        {
+          "market_cap_lamports_threshold": "0",
+          "fees": {
+            "lp_fee_bps": "2",
+            "protocol_fee_bps": "93",
+            "creator_fee_bps": "30"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "420000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "95"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "1470000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "90"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "2460000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "85"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "3440000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "80"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "4420000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "75"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "9820000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "70"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "14740000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "65"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "19650000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "60"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "24560000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "55"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "29470000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "50"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "34380000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "45"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "39300000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "40"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "44210000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "35"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "49120000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "30"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "54030000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "28"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "58940000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "25"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "63860000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "23"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "68770000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "20"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "73681000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "18"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "78590000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "15"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "83500000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "13"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "88400000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "10"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "93330000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "8"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "98240000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "5"
+          }
+        }
+      ],
+      "stable_fee_tiers": [
+        {
+          "market_cap_lamports_threshold": "0",
+          "fees": {
+            "lp_fee_bps": "2",
+            "protocol_fee_bps": "93",
+            "creator_fee_bps": "30"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "59000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "95"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "300000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "90"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "500000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "85"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "700000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "80"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "900000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "75"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "2000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "70"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "3000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "65"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "4000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "60"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "5000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "55"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "6000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "50"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "7000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "45"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "8000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "40"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "9000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "35"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "10000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "30"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "11000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "28"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "12000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "25"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "13000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "23"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "14000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "20"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "15000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "18"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "16000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "15"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "17000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "13"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "18000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "10"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "19000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "8"
+          }
+        },
+        {
+          "market_cap_lamports_threshold": "20000000000000",
+          "fees": {
+            "lp_fee_bps": "20",
+            "protocol_fee_bps": "5",
+            "creator_fee_bps": "5"
+          }
+        }
+      ],
+      "exotic_flat_fees": {
+        "lp_fee_bps": "20",
+        "protocol_fee_bps": "5",
+        "creator_fee_bps": "5"
+      }
+    },
+    "pump_fees.FeeProgramGlobal": {
+      "address": "CHqnuTkj6sXDFknM652aEFPECZh9qVsBXWkhPohmV9dA",
+      "owner": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+      "lamports": 3243360,
+      "_bytes": 338,
+      "bump": 254,
+      "authority": "FFWtrEQ4B4PKQoVuHYzZq8FabGkVatYzDpEVHsK5rrhF",
+      "disable_flags": 0,
+      "social_claim_authority": "2sMrGNK8i36YRkF5WWCwnaUYuwDJhHe1g2xA8aPvhkjM",
+      "claim_rate_limit": "0",
+      "_reserved": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "pump_agent_payments.GlobalConfig": {
+      "address": "ALeLWphFxNVNXpXFEC4Ssf2Jan1Wki72Us8tXMMrQuQZ",
+      "owner": "AgenTMiC2hvxGebTsgmsD4HHBa8WEcqGFf87iwRRxLo7",
+      "lamports": 3681840,
+      "_bytes": 401,
+      "bump": 254,
+      "protocol_authority": "FFWtrEQ4B4PKQoVuHYzZq8FabGkVatYzDpEVHsK5rrhF",
+      "buyback_authority": "GmFrDZT2cdrqykgTikVdXbe8EtCgzUDM9VsDhQnwsUsG",
+      "supported_currencies_mint": [
+        "So11111111111111111111111111111111111111112",
+        "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "11111111111111111111111111111111",
+        "11111111111111111111111111111111",
+        "11111111111111111111111111111111",
+        "11111111111111111111111111111111",
+        "11111111111111111111111111111111",
+        "11111111111111111111111111111111",
+        "11111111111111111111111111111111",
+        "11111111111111111111111111111111"
+      ],
+      "tokenized_agent_sequence": "233878"
+    },
+    "mayhem.global-params": {
+      "address": "13ec7XdrjF3h3YcqBTFDSReRcUFwbCnJaAQspM4j6DDJ",
+      "owner": "MAyhSmzXzV1pTf7LsNkrNwkWKTo4ougAJ1PPg47MD4e",
+      "lamports": 3104160,
+      "bytes": 318,
+      "dataHex": "79c1f857c3384c0b401f00000000000000c817a80400000000c817a80400000000203d88792d000000203d88792d000000d3bb8cab341ce0528457f2c3817d3278441963dcd55fed58ba24c999ddac02aaed64bf8d93a251ab472128330eb846b797063f07befd741dcefff0142d7d57ab9188f0fd27160000000000000000000080f0fa02000000001800000000000000000000000000000000100e0000000000000a000000085101000000000000204aa9d101000000105e5f0000000000409452a303000000409452a30300003442a2ca2b000000000000000000000000093d0000000000100e00000000000000000000000000000040be402500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "mayhem.sol-vault": {
+      "address": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
+      "owner": "11111111111111111111111111111111",
+      "lamports": 63644259351333,
+      "bytes": 0,
+      "dataHex": ""
+    },
+    "PUMP mint": {
+      "address": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "lamports": 9620719493,
+      "bytes": 474,
+      "dataHex": "0000000000000000000000000000000000000000000000000000000000000000000000007bedb5deadec740b06010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010e004000b794c54d2d7560673deb5c93df3bf24995ba14293407c963efa5d97ebc4faedc00000000000000000000000000000000000000000000000000000000000000001200400000000000000000000000000000000000000000000000000000000000000000000c45f7df8d9e72956284933f6d98b757032e83df84604fb5e117fff61d5b12f91300a80000000000000000000000000000000000000000000000000000000000000000000c45f7df8d9e72956284933f6d98b757032e83df84604fb5e117fff61d5b12f90400000050756d700400000050554d505000000068747470733a2f2f697066732e696f2f697066732f6261666b7265696263676c6c646b6664656b646b7867756d6c76656f6536717633706269636579706b77746c693333636c627a756c376c656f346d00000000"
+    },
+    "legacy withdraw/migration authority": {
+      "address": "39azUYFWPz3VHgKCf3VChUwbpURdCHRxjWVowf5jUJjg",
+      "owner": "11111111111111111111111111111111",
+      "lamports": 4737737340658,
+      "bytes": 0,
+      "dataHex": ""
+    },
+    "web.9pan9bMn": {
+      "address": "9pan9bMn5HatX4EJdBwg9VgCa7Uz5HL8N1m5D3NdXejP",
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "lamports": 1462600,
+      "bytes": 82,
+      "dataHex": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000901000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "web.quoteMint.4zMMC9sr": {
+      "address": "4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU",
+      "owner": "11111111111111111111111111111111",
+      "lamports": 98035240,
+      "bytes": 0,
+      "dataHex": ""
+    },
+    "web.33MxwC33": {
+      "address": "33MxwC33Eqgmon152hBcpEYuXUmf2kaK1P74wVz3ry8k",
+      "exists": false
+    },
+    "web.feeRecipient.CebN5WGQ": {
+      "address": "CebN5WGQ4jvEPvsVU4EoHEpgzq1VV7AbicfhtW4xC9iM",
+      "owner": "11111111111111111111111111111111",
+      "lamports": 6344868811391,
+      "bytes": 0,
+      "dataHex": ""
+    },
+    "web.tip.pfnTcJ1i": {
+      "address": "pfnTcJ1i4mRYzbqGduF71RsooUCFkPSpk8UE7drCkjh",
+      "owner": "11111111111111111111111111111111",
+      "lamports": 2280240,
+      "bytes": 0,
+      "dataHex": ""
+    },
+    "web.lookupTable.Hyif6eWb": {
+      "address": "Hyif6eWb8x88RVrvjPfabsgRYnwkVnyByEXTVTXbUcyP",
+      "owner": "AddressLookupTab1e1111111111111111111111111",
+      "lamports": 38029440,
+      "bytes": 5944,
+      "dataHex": "01000000ffffffffffffffffd84d601b00000000b701774bbe7096bcb782aa1cd88a01022459f3558a05282022cc6d7408b2733faa2300000156e0f693665acf44db1568bf175baa5189cb97f5d2ff3b655d2bb6fd6d18b03a865e69ee0f5480cabcf66357e4dc2f18d58d45c1ea7489fb3723d9793c72a61fea7439f3ceb4c4ef4bb9cc7bee40a1a626171b68415feded40b7a8956f84e7acf136eb01fc1c4e883d23c8b5844ab59a37f66add57c5e9ac3b53e059d35c64fa0911a54863412d631f4e078703296c035f0d1333a0d9c8838d73b710fe6e2d0c14defc825ec67694250818bb654065f4298d3156d571b4d4f8090c18e9a863e54a709528839f61c0b9b86079891c139216e47a71b62fb73bec72169458745e890ba644fe1f55aa19f11cd2d2ec14d3233b6e0a4beaeef72b69858e21e170d607215d9940793694e116066ce459b818fdf9bba0c7b41b783fa3a120ca41953241246ecc7d78fe81e41773a46965419937923a07644797df6f3eb514426010cb000000000000000000000000000000000000000000000000000000000000000006ddf6e1ee758fde18425dbce46ccddab61afc4d83b90d27febdf928d8a18bfc06ddf6e1d765a193d9cbe146ceeb79ac1cb485ed5f5b37913a8cf5857eff00a98c97258f4e2489f1bb3d1029148e0d830b5a1399daff1084048e7bd8dbe9f8596f9ab4a4f1958dc0"
+    },
+    "skills.lookupTable.7mFD2mUt": {
+      "address": "7mFD2mUtRS65XstiSAvCJuYmdesZoQwCwRJhq1p3eRMe",
+      "owner": "AddressLookupTab1e1111111111111111111111111",
+      "lamports": 10857600,
+      "bytes": 1432,
+      "dataHex": "01000000fffffffffffffffffdae4518000000001a00000000000000000000000000000000000000000000000000000000000000000000000156e0f693665acf44db1568bf175baa5189cb97f5d2ff3b655d2bb6fd6d18b00c14defc825ec67694250818bb654065f4298d3156d571b4d4f8090c18e9a8630c35ffa9055a8e568da8f7bc075615274cf1c92ca41f40009c516aa414c27c70052ae5d7a7daa724a6eab0a7295491855ad4a0671660674c4e034559803d65a3acf136eb01fc1c4e883d23c8b5844ab59a37f66add57c5e9ac3b53e059d35c64e54a709528839f61c0b9b86079891c139216e47a71b62fb73bec72169458745eb3af3c584131dda77475bd5d6bd18bd0b001c520684800429b2125152b14220b3a865e69ee0f5480cabcf66357e4dc2f18d58d45c1ea7489fb3723d9793c72a6fa9682a3852e3e3ccd4c1290011367925e9f782d149ea0c94eb1ae5eaf2b07bcfa0911a54863412d631f4e078703296c035f0d1333a0d9c8838d73b710fe6e2da3d7bb127e58adc12ca68f83437ec2e1c3f9820de93e58f9178a2918ddaaf7b4000000000000000000000000000000000000000000000000000000000000000006ddf6e1d765a193d9cbe146ceeb79ac1cb485ed5f5b37913a8cf5857eff00a906ddf6e1ee758fde18425dbce46ccddab61afc4d83b90d27febdf928d8a18bfc8c97258f4e2489f1"
+    }
+  },
+  "addresses": {
+    "FFWtrEQ4B4PKQoVuHYzZq8FabGkVatYzDpEVHsK5rrhF": {
+      "roles": [
+        "pump.Global.authority",
+        "pump_amm.GlobalConfig.admin",
+        "pump_fees.FeeConfig(pump).admin",
+        "pump_fees.FeeConfig(pump_amm).admin",
+        "pump_fees.FeeProgramGlobal.authority",
+        "pump_agent_payments.GlobalConfig.protocol_authority"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 257171760,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "39azUYFWPz3VHgKCf3VChUwbpURdCHRxjWVowf5jUJjg": {
+      "roles": [
+        "pump.Global.withdraw_authority",
+        "pump.Global.set_creator_authority"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 4737737340658,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "UqN2p5bAzBqYdHXcgB6WLtuVrdvmy9JSAtgqZb3CMKw": {
+      "roles": [
+        "pump.Global.admin_set_creator_authority",
+        "pump_amm.GlobalConfig.admin_set_coin_creator_authority"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 1583784975,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "HckQ93Xqjjo8mwt5pNPWvyCTZXQZ858rvzmm7ZRrZg9t": {
+      "roles": [
+        "pump.Global.holder_reward_claim_authority"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 76145309873,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s": {
+      "roles": [
+        "pump.Global.whitelist_pda"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 63644268982761,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "62qc2CNXwrYqQScmEdiZFFAnJR262PxWEuNQtxfafNgV": {
+      "roles": [
+        "pump.Global.fee_recipient",
+        "pump_amm.GlobalConfig.protocol_fee_recipients[0]"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 18465661911050,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "7VtfL8fvgNfhz17qKRMjzQEXgbdpnHHHQRh54R9jP2RJ": {
+      "roles": [
+        "pump.Global.fee_recipients[0]",
+        "pump_amm.GlobalConfig.protocol_fee_recipients[1]"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 7972280840653,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "7hTckgnGnLQR6sdH7YkqFTAA7VwTfYFaZ6EhEsU3saCX": {
+      "roles": [
+        "pump.Global.fee_recipients[1]",
+        "pump_amm.GlobalConfig.protocol_fee_recipients[2]"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 7923841298796,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "9rPYyANsfQZw3DnDmKE3YCQF5E8oD89UXoHn9JFEhJUz": {
+      "roles": [
+        "pump.Global.fee_recipients[2]",
+        "pump_amm.GlobalConfig.protocol_fee_recipients[3]"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 6274762019614,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "AVmoTthdrX6tKt4nDjco2D775W2YK3sDhxPcMmzUAmTY": {
+      "roles": [
+        "pump.Global.fee_recipients[3]",
+        "pump_amm.GlobalConfig.protocol_fee_recipients[4]"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 6463796577061,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "CebN5WGQ4jvEPvsVU4EoHEpgzq1VV7AbicfhtW4xC9iM": {
+      "roles": [
+        "pump.Global.fee_recipients[4]"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 6344868811391,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "FWsW1xNtWscwNmKv6wVsU1iTzRN6wmmk3MjxRP5tT7hz": {
+      "roles": [
+        "pump.Global.fee_recipients[5]",
+        "pump_amm.GlobalConfig.protocol_fee_recipients[5]"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 6206145152293,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "G5UZAVbAf46s7cKWoyKu8kYTip9DGTpbLZ2qa9Aq69dP": {
+      "roles": [
+        "pump.Global.fee_recipients[6]",
+        "pump_amm.GlobalConfig.protocol_fee_recipients[6]"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 6882439694358,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "GesfTA3X2arioaHp8bbKdjG9vJtskViWACZoYvxp4twS": {
+      "roles": [
+        "pump.Global.reserved_fee_recipient"
+      ],
+      "exists": true,
+      "owner": "MAyhSmzXzV1pTf7LsNkrNwkWKTo4ougAJ1PPg47MD4e",
+      "lamports": 14519168574,
+      "space": 74,
+      "isBuybackVault": false
+    },
+    "4budycTjhs9fD6xw62VBducVTNgMgJJ5BgtKq7mAZwn6": {
+      "roles": [
+        "pump.Global.reserved_fee_recipients[0]"
+      ],
+      "exists": true,
+      "owner": "MAyhSmzXzV1pTf7LsNkrNwkWKTo4ougAJ1PPg47MD4e",
+      "lamports": 11467757711,
+      "space": 74,
+      "isBuybackVault": false
+    },
+    "8SBKzEQU4nLSzcwF4a74F2iaUDQyTfjGndn6qUWBnrpR": {
+      "roles": [
+        "pump.Global.reserved_fee_recipients[1]"
+      ],
+      "exists": true,
+      "owner": "MAyhSmzXzV1pTf7LsNkrNwkWKTo4ougAJ1PPg47MD4e",
+      "lamports": 11009239261,
+      "space": 74,
+      "isBuybackVault": false
+    },
+    "4UQeTP1T39KZ9Sfxzo3WR5skgsaP6NZa87BAkuazLEKH": {
+      "roles": [
+        "pump.Global.reserved_fee_recipients[2]"
+      ],
+      "exists": true,
+      "owner": "MAyhSmzXzV1pTf7LsNkrNwkWKTo4ougAJ1PPg47MD4e",
+      "lamports": 10966308437,
+      "space": 74,
+      "isBuybackVault": false
+    },
+    "8sNeir4QsLsJdYpc9RZacohhK1Y5FLU3nC5LXgYB4aa6": {
+      "roles": [
+        "pump.Global.reserved_fee_recipients[3]"
+      ],
+      "exists": true,
+      "owner": "MAyhSmzXzV1pTf7LsNkrNwkWKTo4ougAJ1PPg47MD4e",
+      "lamports": 10330572637,
+      "space": 74,
+      "isBuybackVault": false
+    },
+    "Fh9HmeLNUMVCvejxCtCL2DbYaRyBFVJ5xrWkLnMH6fdk": {
+      "roles": [
+        "pump.Global.reserved_fee_recipients[4]"
+      ],
+      "exists": true,
+      "owner": "MAyhSmzXzV1pTf7LsNkrNwkWKTo4ougAJ1PPg47MD4e",
+      "lamports": 10195060415,
+      "space": 74,
+      "isBuybackVault": false
+    },
+    "463MEnMeGyJekNZFQSTUABBEbLnvMTALbT6ZmsxAbAdq": {
+      "roles": [
+        "pump.Global.reserved_fee_recipients[5]"
+      ],
+      "exists": true,
+      "owner": "MAyhSmzXzV1pTf7LsNkrNwkWKTo4ougAJ1PPg47MD4e",
+      "lamports": 11786103088,
+      "space": 74,
+      "isBuybackVault": false
+    },
+    "6AUH3WEHucYZyC61hqpqYUWVto5qA5hjHuNQ32GNnNxA": {
+      "roles": [
+        "pump.Global.reserved_fee_recipients[6]"
+      ],
+      "exists": true,
+      "owner": "MAyhSmzXzV1pTf7LsNkrNwkWKTo4ougAJ1PPg47MD4e",
+      "lamports": 10416036925,
+      "space": 74,
+      "isBuybackVault": false
+    },
+    "5YxQFdt3Tr9zJLvkFccqXVUwhdTWJQc1fFg2YPbxvxeD": {
+      "roles": [
+        "pump.Global.buyback_fee_recipients[0]",
+        "pump_amm.GlobalConfig.buyback_fee_recipients[0]"
+      ],
+      "exists": true,
+      "owner": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+      "lamports": 37743899,
+      "space": 208,
+      "isBuybackVault": true
+    },
+    "9M4giFFMxmFGXtc3feFzRai56WbBqehoSeRE5GK7gf7": {
+      "roles": [
+        "pump.Global.buyback_fee_recipients[1]",
+        "pump_amm.GlobalConfig.buyback_fee_recipients[1]"
+      ],
+      "exists": true,
+      "owner": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+      "lamports": 7688942,
+      "space": 208,
+      "isBuybackVault": true
+    },
+    "GXPFM2caqTtQYC2cJ5yJRi9VDkpsYZXzYdwYpGnLmtDL": {
+      "roles": [
+        "pump.Global.buyback_fee_recipients[2]",
+        "pump_amm.GlobalConfig.buyback_fee_recipients[2]"
+      ],
+      "exists": true,
+      "owner": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+      "lamports": 13007953,
+      "space": 208,
+      "isBuybackVault": true
+    },
+    "3BpXnfJaUTiwXnJNe7Ej1rcbzqTTQUvLShZaWazebsVR": {
+      "roles": [
+        "pump.Global.buyback_fee_recipients[3]",
+        "pump_amm.GlobalConfig.buyback_fee_recipients[3]"
+      ],
+      "exists": true,
+      "owner": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+      "lamports": 15548004,
+      "space": 208,
+      "isBuybackVault": true
+    },
+    "5cjcW9wExnJJiqgLjq7DEG75Pm6JBgE1hNv4B2vHXUW6": {
+      "roles": [
+        "pump.Global.buyback_fee_recipients[4]",
+        "pump_amm.GlobalConfig.buyback_fee_recipients[4]"
+      ],
+      "exists": true,
+      "owner": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+      "lamports": 25979419,
+      "space": 208,
+      "isBuybackVault": true
+    },
+    "EHAAiTxcdDwQ3U4bU6YcMsQGaekdzLS3B5SmYo46kJtL": {
+      "roles": [
+        "pump.Global.buyback_fee_recipients[5]",
+        "pump_amm.GlobalConfig.buyback_fee_recipients[5]"
+      ],
+      "exists": true,
+      "owner": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+      "lamports": 19102890,
+      "space": 208,
+      "isBuybackVault": true
+    },
+    "5eHhjP8JaYkz83CWwvGU2uMUXefd3AazWGx4gpcuEEYD": {
+      "roles": [
+        "pump.Global.buyback_fee_recipients[6]",
+        "pump_amm.GlobalConfig.buyback_fee_recipients[6]"
+      ],
+      "exists": true,
+      "owner": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+      "lamports": 40675201,
+      "space": 208,
+      "isBuybackVault": true
+    },
+    "A7hAgCzFw14fejgCp387JUJRMNyz4j89JKnhtKU8piqW": {
+      "roles": [
+        "pump.Global.buyback_fee_recipients[7]",
+        "pump_amm.GlobalConfig.buyback_fee_recipients[7]"
+      ],
+      "exists": true,
+      "owner": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+      "lamports": 24165003,
+      "space": 208,
+      "isBuybackVault": true
+    },
+    "HTVZVEQMBsNanubDPTs3CxDAEGNFQHJY8c1441iy2S5r": {
+      "roles": [
+        "pump_amm.GlobalConfig.boost_authority"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 26931915571,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "JCRGumoE9Qi5BBgULTgdgTLjSgkCMSbF62ZZfGs84JeU": {
+      "roles": [
+        "pump_amm.GlobalConfig.protocol_fee_recipients[7]"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 1000005,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "2sMrGNK8i36YRkF5WWCwnaUYuwDJhHe1g2xA8aPvhkjM": {
+      "roles": [
+        "pump_fees.FeeProgramGlobal.social_claim_authority"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 100952543703,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "2fAEoCqd6c4tX8s9sMoXTvGnmuzoczFyJsHr72Xq4YyQ": {
+      "roles": [
+        "pump.QuoteControl.admin"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 94497600,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "9D6H6Yp65TtwUUW7h5xwPDRzD3USvG9n3qjusYCLgz5h": {
+      "roles": [
+        "pump.QuoteControl.reserves_admin"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 62755300,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "GmFrDZT2cdrqykgTikVdXbe8EtCgzUDM9VsDhQnwsUsG": {
+      "roles": [
+        "pump_agent_payments.GlobalConfig.buyback_authority"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 29104694657,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "7gZufwwAo17y5kg8FMyJy2phgpvv9RSdzWtdXiWHjFr8": {
+      "roles": [
+        "upgrade authority",
+        "upgrade authority",
+        "upgrade authority",
+        "upgrade authority",
+        "upgrade authority"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 321977902154,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "9rmqZkmn3Bzd4jAL5uw3TXCgWvbHwH1VyW6fdFtimASu": {
+      "roles": [
+        "upgrade authority"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 101000000,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "5oJNGGDxGGTt2eXuwaqtuM1AXqvWg7dCs626QnYC8xDn": {
+      "roles": [
+        "upgrade authority"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 2322234329,
+      "space": 0,
+      "isBuybackVault": false
+    },
+    "92gWFZMpGhWzVq5tjBnJxF9VnFwE3ydB2idJp9z2D9Nr": {
+      "roles": [
+        "upgrade authority"
+      ],
+      "exists": true,
+      "owner": "11111111111111111111111111111111",
+      "lamports": 58944635576,
+      "space": 0,
+      "isBuybackVault": false
+    }
+  },
+  "rpcCalls": 15
+}

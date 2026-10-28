@@ -1,0 +1,5 @@
+import fs from 'node:fs';import path from 'node:path';
+const root=path.resolve(import.meta.dirname,'..'),skip=new Set(['node_modules','dist','target','.local','.git','generated']);
+let json=0,bom=0;
+function walk(directory){for(const entry of fs.readdirSync(directory,{withFileTypes:true})){if(skip.has(entry.name))continue;const file=path.join(directory,entry.name);if(entry.isDirectory()){walk(file);continue;}const ext=path.extname(entry.name);if(!['Dockerfile','.gitignore','.dockerignore'].includes(entry.name) && !['.json','.ts','.js','.mjs','.cjs','.md','.yaml','.yml','.sql','.toml','.proto','.py','.rs','.prisma','.lock','.example','.conf','.template'].includes(ext))continue;const bytes=fs.readFileSync(file);let text=new TextDecoder('utf-8',{fatal:true,ignoreBOM:true}).decode(bytes);if(text.startsWith('\uFEFF')){text=text.slice(1);bom++;fs.writeFileSync(file,text);}if(ext==='.json'){const normalized=JSON.stringify(JSON.parse(text),null,2)+'\n';if(normalized!==text){fs.writeFileSync(file,normalized);json++;}}}}
+walk(root);console.log(JSON.stringify({event:'source_format_checked',bomRemoved:bom,jsonFormatted:json}));

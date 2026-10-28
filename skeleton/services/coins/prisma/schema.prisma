@@ -1,0 +1,110 @@
+// Projection used by the registry ORM. SQL migrations in storage/postgres remain authoritative:
+// their partial indexes, outbox, and other domain tables must not be replaced by db push.
+// Client generation runs at build without connecting to PostgreSQL.
+generator client {
+  provider = "prisma-client"
+  output = "../src/generated/prisma"
+  moduleFormat = "cjs"
+  engineType = "client"
+}
+datasource db {
+  provider = "postgresql"
+}
+model User {
+  id String @id @db.Uuid
+  username String @unique @db.Citext
+  bio String @default("")
+  kind String @default("PERSON")
+  canonicalSvmWallet String? @unique @map("canonical_svm_wallet")
+  canonicalEvmWallet String? @unique @map("canonical_evm_wallet")
+  xUsername String? @unique @map("x_username") @db.Citext
+  bannedAt DateTime? @map("banned_at") @db.Timestamptz(6)
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  wallets Wallet[]
+  sessions Session[]
+  apiOrg ApiOrg?
+  externalIdentities ExternalIdentity[]
+  @@map("users")
+}
+model Wallet {
+  address String @id
+  userId String @map("user_id") @db.Uuid
+  chain String
+  custody String
+  reserved Boolean @default(false)
+  user User @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  externalIdentities ExternalIdentity[]
+  @@index([userId], map: "wallets_user")
+  @@map("wallets")
+}
+model Session {
+  jti String @id @db.Uuid
+  userId String? @map("user_id") @db.Uuid
+  wallet String
+  expiresAt DateTime @map("expires_at") @db.Timestamptz(6)
+  revokedAt DateTime? @map("revoked_at") @db.Timestamptz(6)
+  user User? @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  @@map("sessions")
+}
+model Coin {
+  chain String
+  address String
+  name String
+  symbol String
+  description String @default("")
+  creator String
+  decimals Int
+  quoteMint String @map("quote_mint")
+  quoteDecimals Int @map("quote_decimals")
+  totalSupply Decimal @map("total_supply") @db.Decimal(78, 0)
+  complete Boolean @default(false)
+  mayhemMode Boolean @default(false) @map("mayhem_mode")
+  mayhemEndsAt DateTime? @map("mayhem_ends_at") @db.Timestamptz(6)
+  securityVerdict Json @default("{\"verdict\":\"allow\"}") @map("security_verdict")
+  metadata Json @default("{}")
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  @@id([chain, address])
+  @@map("coins")
+}
+model ApiOrg {
+  id String @id @db.Uuid
+  owner String @unique @db.Uuid
+  status String
+  contactEmail String? @map("contact_email")
+  emailVerifiedAt DateTime? @map("email_verified_at") @db.Timestamptz(6)
+  termsVersion String? @map("terms_version")
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  ownerUser User @relation(fields: [owner], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  keys ApiKey[]
+  @@map("api_orgs")
+}
+model ApiKey {
+  id String @id @db.Uuid
+  orgId String @map("org_id") @db.Uuid
+  name String
+  prefix String
+  last4 String
+  hash Bytes @unique
+  scopes String[]
+  dailyLimit Int @map("daily_limit")
+  burst Int
+  status String
+  rotatedFrom String? @map("rotated_from") @db.Uuid
+  graceUntil DateTime? @map("grace_until") @db.Timestamptz(6)
+  lastUsedAt DateTime? @map("last_used_at") @db.Timestamptz(6)
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  org ApiOrg @relation(fields: [orgId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  previous ApiKey? @relation("KeyRotation", fields: [rotatedFrom], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  successors ApiKey[] @relation("KeyRotation")
+  @@map("api_keys")
+}
+model ExternalIdentity {
+  provider String
+  subject String
+  userId String @map("user_id") @db.Uuid
+  wallet String
+  user User @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  linkedWallet Wallet @relation(fields: [wallet], references: [address], onDelete: NoAction, onUpdate: NoAction)
+  @@id([provider, subject])
+  @@map("external_identities")
+}

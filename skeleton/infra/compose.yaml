@@ -1,0 +1,51 @@
+# Local stores managed independently of application services.
+#   docker compose -f infra/compose.yaml up -d
+#   docker compose -f infra/compose.yaml stop
+name: pumpskel
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: pumpskel-postgres
+    network_mode: bridge
+    environment:
+      POSTGRES_USER: pumpskel
+      POSTGRES_PASSWORD: pumpskel
+      POSTGRES_DB: pumpskel
+    ports: ["127.0.0.1:5641:5432"]
+    volumes: ["pumpskel-pg:/var/lib/postgresql/data"]
+
+  clickhouse:
+    image: clickhouse/clickhouse-server:25.8
+    container_name: pumpskel-clickhouse
+    network_mode: bridge
+    environment:
+      CLICKHOUSE_USER: pumpskel
+      CLICKHOUSE_PASSWORD: pumpskel
+      CLICKHOUSE_DB: pumpskel
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: "1"
+    ports: ["127.0.0.1:8641:8123", "127.0.0.1:9641:9000"]
+    ulimits: { nofile: { soft: 262144, hard: 262144 } }
+    volumes: ["pumpskel-ch:/var/lib/clickhouse"]
+
+  redis:
+    image: redis:7.4-alpine
+    container_name: pumpskel-redis
+    network_mode: bridge
+    ports: ["127.0.0.1:6641:6379"]
+
+  nats:
+    image: nats:2.11-alpine
+    container_name: pumpskel-nats
+    network_mode: bridge
+    # Generate the mounted configuration first: npm run prepare:nats-auth.
+    command: ["-c", "/etc/nats/server.conf"]
+    volumes:
+      - "../.local/nats/server.conf:/etc/nats/server.conf:ro"
+      - "pumpskel-nats:/data/jetstream"
+    ports: ["127.0.0.1:4641:4222", "127.0.0.1:8642:8222"]
+
+volumes:
+  pumpskel-pg:
+  pumpskel-ch:
+  pumpskel-nats:

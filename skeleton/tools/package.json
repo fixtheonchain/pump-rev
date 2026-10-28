@@ -1,0 +1,23 @@
+{
+  "name": "@pump/tools",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@pump/http": "0.1.0",
+    "@pump/proto": "0.1.0",
+    "@pump/runtime": "0.1.0",
+    "@grpc/grpc-js": "^1.14.6",
+    "nats": "^2.29.3",
+    "pg": "^8.16.3",
+    "ws": "^8.18.3",
+    "@pump/nats-auth": "*",
+    "nkeys.js": "1.1.0",
+    "@pump/tx-builder": "*"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.1"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "apiVersion": "networking.k8s.io/v1",
+  "kind": "Ingress",
+  "metadata": {
+    "name": "pumpfun-edge",
+    "namespace": "pumpfun-skeleton",
+    "annotations": {
+      "alb.ingress.kubernetes.io/scheme": "${AWS_ALB_SCHEME}",
+      "alb.ingress.kubernetes.io/target-type": "ip",
+      "alb.ingress.kubernetes.io/certificate-arn": "${AWS_ACM_CERTIFICATE_ARN}",
+      "alb.ingress.kubernetes.io/listen-ports": "[{\"HTTP\":80},{\"HTTPS\":443}]",
+      "alb.ingress.kubernetes.io/ssl-redirect": "443",
+      "alb.ingress.kubernetes.io/ssl-policy": "${AWS_ALB_SSL_POLICY}",
+      "alb.ingress.kubernetes.io/load-balancer-attributes": "idle_timeout.timeout_seconds=${AWS_ALB_IDLE_TIMEOUT_SECONDS}",
+      "alb.ingress.kubernetes.io/healthcheck-path": "/health",
+      "alb.ingress.kubernetes.io/backend-protocol": "HTTP"
+    }
+  },
+  "spec": {
+    "ingressClassName": "alb",
+    "rules": [
+      {
+        "host": "${PUMPSKEL_BFF_HOST}",
+        "http": {
+          "paths": [
+            {
+              "path": "/stream",
+              "pathType": "Prefix",
+              "backend": {
+                "service": {
+                  "name": "stream-gateway",
+                  "port": {
+                    "number": 4346
+                  }
+                }
+              }
+            },
+            {
+              "path": "/",
+              "pathType": "Prefix",
+              "backend": {
+                "service": {
+                  "name": "client-server",
+                  "port": {
+                    "number": 4345
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "host": "${PUMPSKEL_KEYED_HOST}",
+        "http": {
+          "paths": [
+            {
+              "path": "/",
+              "pathType": "Prefix",
+              "backend": {
+                "service": {
+                  "name": "keyed-api",
+                  "port": {
+                    "number": 4353
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@pump/solana",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@pump/runtime": "0.1.0",
+    "@solana/web3.js": "1.98.4",
+    "tweetnacl": "1.0.3",
+    "bs58": "6.0.0"
+  }
+}

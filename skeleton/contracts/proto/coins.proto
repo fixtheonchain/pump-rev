@@ -1,0 +1,8 @@
+syntax = "proto3";
+package coins.v1;
+message CoinRequest { string chain = 1; string address = 2; }
+message Coin { string chain = 1; string address = 2; string name = 3; string symbol = 4; string description = 5; uint32 decimals = 6; bool complete = 7; bool mayhem_mode = 8; }
+message Empty {}
+message HealthResponse { string status = 1; }
+service CoinsApi { rpc GetCoin(CoinRequest) returns (Coin); rpc Health(Empty) returns (HealthResponse); }
+

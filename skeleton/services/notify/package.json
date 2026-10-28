@@ -1,0 +1,21 @@
+{
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "@pump/runtime": "0.1.0",
+    "@pump/internal-http": "0.1.0",
+    "zod": "^4.6.7",
+    "decimal.js": "^10.6.0",
+    "nats": "^2.29.3",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.15.6"
+  },
+  "name": "@pump/notify"
+}

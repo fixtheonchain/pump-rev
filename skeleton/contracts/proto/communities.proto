@@ -1,0 +1,39 @@
+syntax = "proto3";
+package communities.v1;
+
+service CommunitiesApi {
+  rpc GetUser(UserRequest) returns (User);
+  rpc ListUsers(ListUsersRequest) returns (UserPage);
+  rpc Follow(FollowRequest) returns (FollowResponse);
+  rpc GetFollowing(FollowingRequest) returns (UserPage);
+  rpc CreateCallout(CreateCalloutRequest) returns (CreateCalloutResponse);
+  rpc GetCallout(CalloutRequest) returns (Callout);
+  rpc GetEligibility(EligibilityRequest) returns (EligibilityResponse);
+  rpc Health(Empty) returns (HealthResponse);
+}
+message Empty {}
+message HealthResponse { string status = 1; }
+message UserRequest { string id = 1; }
+message User {
+  string id = 1; string username = 2; string bio = 3; string kind = 4;
+  string canonical_svm_wallet = 5; string canonical_evm_wallet = 6; bool banned = 7;
+}
+message ListUsersRequest { uint32 limit = 1; string cursor = 2; string search = 3; }
+message UserPage { repeated User users = 1; string next_cursor = 2; uint32 count = 3; }
+message FollowRequest { string user_id = 1; string target_user_id = 2; string origin = 3; bool remove = 4; }
+message FollowResponse { bool following = 1; }
+message FollowingRequest { string user_id = 1; bool followers = 2; uint32 limit = 3; string cursor = 4; }
+message CreateCalloutRequest {
+  string user_id = 1; string wallet = 2; string coin_mint = 3; string chain = 4; string thesis = 5;
+  string as_group_id = 6; string media_id = 7; string quoted_callout_id = 8; uint32 version = 9; string source_ref = 10;
+}
+message Callout {
+  string id = 1; User author = 2; string chain = 3; string coin = 4; string thesis = 5;
+  string media_id = 6; string acting_group = 7; string created_at = 8;
+  string price_usd_at_call = 9; string called_out_at_mcap = 10; string status = 11; string quoted_callout_id = 12;
+}
+message CreateCalloutResponse { Callout callout = 1; }
+message CalloutRequest { string id = 1; }
+message EligibilityRequest { string user_id = 1; string wallet = 2; string coin_mint = 3; string chain = 4; string as_group_id = 5; }
+message Preflight { bool existing_callout = 1; uint32 attempts_remaining = 2; string cooldown_until = 3; }
+message EligibilityResponse { bool eligible = 1; string reason = 2; Preflight preflight = 3; }

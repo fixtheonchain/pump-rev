@@ -1,0 +1,19 @@
+{
+  "name": "@pump/runtime",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "pg": "^8.16.3",
+    "nats": "^2.29.3",
+    "redis": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.15.6"
+  }
+}

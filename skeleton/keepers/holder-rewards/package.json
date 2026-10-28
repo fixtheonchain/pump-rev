@@ -1,0 +1,18 @@
+{
+  "name": "@pump/holder-rewards",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "@pump/runtime": "0.1.0",
+    "@pump/solana": "0.1.0",
+    "@pump/tx-builder": "0.1.0",
+    "@solana/web3.js": "1.98.4",
+    "decimal.js": "^10.6.0"
+  }
+}

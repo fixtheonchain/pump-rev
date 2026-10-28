@@ -1,0 +1,91 @@
+{
+  "apiVersion": "apps/v1",
+  "kind": "Deployment",
+  "metadata": {
+    "name": "${NAME}",
+    "namespace": "pumpfun-skeleton"
+  },
+  "spec": {
+    "replicas": "${REPLICAS}",
+    "selector": {
+      "matchLabels": {
+        "app.kubernetes.io/name": "${NAME}"
+      }
+    },
+    "template": {
+      "metadata": {
+        "labels": {
+          "app.kubernetes.io/name": "${NAME}",
+          "app.kubernetes.io/part-of": "pumpfun-skeleton"
+        }
+      },
+      "spec": {
+        "serviceAccountName": "${NAME}",
+        "automountServiceAccountToken": false,
+        "nodeSelector": {
+          "topology.kubernetes.io/region": "us-east-1"
+        },
+        "terminationGracePeriodSeconds": "${TERMINATION_GRACE_SECONDS}",
+        "securityContext": {
+          "runAsNonRoot": true,
+          "runAsUser": 1000,
+          "runAsGroup": 1000,
+          "fsGroup": 1000,
+          "seccompProfile": {
+            "type": "RuntimeDefault"
+          }
+        },
+        "containers": [
+          {
+            "name": "${NAME}",
+            "image": "${IMAGE_REGISTRY}/${IMAGE}:${IMAGE_TAG}",
+            "imagePullPolicy": "${PUMPSKEL_IMAGE_PULL_POLICY}",
+            "envFrom": [
+              {
+                "configMapRef": {
+                  "name": "pumpskel-config"
+                }
+              },
+              {
+                "secretRef": {
+                  "name": "pumpskel-stores"
+                }
+              }
+            ],
+            "resources": {
+              "requests": {
+                "cpu": "${REQUEST_CPU}",
+                "memory": "${REQUEST_MEMORY}"
+              },
+              "limits": {
+                "cpu": "${LIMIT_CPU}",
+                "memory": "${LIMIT_MEMORY}"
+              }
+            },
+            "securityContext": {
+              "allowPrivilegeEscalation": false,
+              "readOnlyRootFilesystem": true,
+              "capabilities": {
+                "drop": [
+                  "ALL"
+                ]
+              }
+            },
+            "volumeMounts": [
+              {
+                "name": "tmp",
+                "mountPath": "/tmp"
+              }
+            ]
+          }
+        ],
+        "volumes": [
+          {
+            "name": "tmp",
+            "emptyDir": {}
+          }
+        ]
+      }
+    }
+  }
+}

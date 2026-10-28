@@ -1,0 +1,125 @@
+[
+  {
+    "name": "client-server",
+    "image": "client-server",
+    "entry": "services/client-server/dist/main.js",
+    "port": 4345,
+    "internal": true,
+    "session": true,
+    "issuer": true,
+    "identity": true
+  },
+  {
+    "name": "keyed-api",
+    "image": "client-server",
+    "entry": "services/client-server/dist/main.js",
+    "args": [
+      "--keyed"
+    ],
+    "port": 4353,
+    "internal": true,
+    "session": true,
+    "identity": true
+  },
+  {
+    "name": "stream-gateway",
+    "image": "stream-gateway",
+    "entry": "services/stream-gateway/dist/main.js",
+    "port": 4346,
+    "session": true
+  },
+  {
+    "name": "trading",
+    "image": "trading",
+    "entry": "services/trading/dist/main.js",
+    "port": 4347,
+    "session": true,
+    "nats": "trading"
+  },
+  {
+    "name": "communities",
+    "image": "communities",
+    "entry": "services/communities/dist/main.js",
+    "port": 4348,
+    "nats": "communities"
+  },
+  {
+    "name": "coins",
+    "image": "coins",
+    "entry": "services/coins/dist/main.js",
+    "port": 4349
+  },
+  {
+    "name": "tx-builder",
+    "image": "tx-builder",
+    "entry": "services/tx-builder/dist/main.js",
+    "port": 4350,
+    "internal": true,
+    "transaction": true
+  },
+  {
+    "name": "limit",
+    "image": "limit",
+    "entry": "services/limit/dist/main.js",
+    "port": 4351,
+    "internal": true,
+    "transaction": true
+  },
+  {
+    "name": "profile",
+    "image": "profile",
+    "entry": "services/profile/dist/main.js",
+    "port": 4352,
+    "internal": true
+  },
+  {
+    "name": "notify",
+    "image": "notify",
+    "entry": "services/notify/dist/main.js",
+    "port": 4354,
+    "internal": true,
+    "notification": true,
+    "nats": "notify",
+    "singleton": true
+  },
+  {
+    "name": "live",
+    "image": "live",
+    "entry": "services/live/dist/main.js",
+    "port": 4355,
+    "internal": true
+  },
+  {
+    "name": "bridge",
+    "image": "bridge",
+    "entry": "services/bridge/dist/main.js",
+    "port": 4356,
+    "internal": true
+  },
+  {
+    "name": "auth-callout",
+    "image": "auth-callout",
+    "entry": "services/auth-callout/dist/main.js",
+    "port": 4357,
+    "issuer": true,
+    "curve": true,
+    "nats": "auth-callout"
+  },
+  {
+    "name": "holder-rewards",
+    "image": "holder-rewards",
+    "entry": "keepers/holder-rewards/dist/main.js",
+    "port": 4358,
+    "transaction": true,
+    "holder": true,
+    "nats": "keepers",
+    "singleton": true
+  },
+  {
+    "name": "ingest",
+    "image": "ingest",
+    "rust": true,
+    "nats": "ingest",
+    "singleton": true
+  }
+]

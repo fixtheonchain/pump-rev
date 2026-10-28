@@ -1,0 +1,19 @@
+{
+  "assets": {
+    "US517G5965aydkZ46HS38QLi7UQiSojurfbQfKCELFx": {
+      "chain": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "mint": "US517G5965aydkZ46HS38QLi7UQiSojurfbQfKCELFx",
+      "quote_mint": "gBxS1f6uyyGPuW5MzGBukidSb71jdsCb5fZaoSzULE5",
+      "base_decimals": 6,
+      "quote_decimals": 9,
+      "supply_atomic": "1000000000000000",
+      "quote_usd": "150",
+      "name": "Ordinal Research Coin",
+      "symbol": "ORD",
+      "description": "Local-only Anchor event fixture"
+    }
+  },
+  "pools": {
+    "cGfHiC6Kgg3FpFZvgwGcswsCRtp4aBP2fzuXRQPizuN": "US517G5965aydkZ46HS38QLi7UQiSojurfbQfKCELFx"
+  }
+}

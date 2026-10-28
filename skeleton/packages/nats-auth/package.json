@@ -1,0 +1,14 @@
+{
+  "name": "@pump/nats-auth",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@pump/runtime": "0.1.0",
+    "nkeys.js": "1.1.0"
+  }
+}

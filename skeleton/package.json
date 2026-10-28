@@ -1,0 +1,51 @@
+{
+  "name": "pumpfun-backend-skeleton",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22 <23"
+  },
+  "workspaces": [
+    "contracts/*",
+    "packages/*",
+    "services/*",
+    "keepers/*",
+    "tools"
+  ],
+  "scripts": {
+    "build": "node tools/build-workspaces.mjs",
+    "migrate": "node tools/dist/migrate.js",
+    "seed": "node tools/dist/seed.js && node tools/dist/seed-key.js",
+    "fixtures": "node ingest/tools/generate-fixtures.mjs",
+    "start:bff": "node services/client-server/dist/main.js",
+    "start:keyed": "node services/client-server/dist/main.js --keyed",
+    "start:trading": "node services/trading/dist/main.js",
+    "start:communities": "node services/communities/dist/main.js",
+    "start:coins": "node services/coins/dist/main.js",
+    "start:stream": "node services/stream-gateway/dist/main.js",
+    "start:local": "node tools/dist/start-local.js",
+    "ingest": "cargo run --manifest-path ingest/Cargo.toml -- replay fixtures/replay.jsonl",
+    "test:core": "node --test services/communities/dist/*.test.js services/client-server/dist/*.test.js && cargo test --manifest-path ingest/Cargo.toml",
+    "verify:slices": "node tools/dist/verify-slices.js",
+    "dev:tls": "node tools/dist/dev-tls.js",
+    "prepare:local": "node tools/prepare-local.mjs",
+    "prepare:nats-auth": "node tools/dist/prepare-nats-auth.js",
+    "verify:nats-auth": "node tools/dist/verify-nats-auth.js",
+    "seed:transactions": "node tools/dist/seed-transactions.js",
+    "test:money": "node --test services/tx-builder/dist/money.test.js keepers/holder-rewards/dist/money.test.js services/limit/dist/engine.test.js",
+    "start:tx-builder": "node services/tx-builder/dist/main.js",
+    "start:limit": "node services/limit/dist/main.js",
+    "start:profile": "node services/profile/dist/main.js",
+    "start:notify": "node services/notify/dist/main.js",
+    "start:live": "node services/live/dist/main.js",
+    "start:bridge": "node services/bridge/dist/main.js",
+    "start:auth-callout": "node services/auth-callout/dist/main.js",
+    "start:holder-rewards": "node keepers/holder-rewards/dist/main.js",
+    "render:deploy": "node infra/render-deploy.mjs",
+    "format:source": "node tools/format-source.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^7.0.2"
+  }
+}

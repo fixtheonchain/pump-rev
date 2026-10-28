@@ -1,0 +1,6 @@
+import fs from 'node:fs';import path from 'node:path';import {spawnSync} from 'node:child_process';
+const root=path.resolve(import.meta.dirname,'..');
+const packages=['contracts','packages','services','keepers'].flatMap(folder=>fs.readdirSync(path.join(root,folder),{withFileTypes:true}).filter(item=>item.isDirectory()).map(item=>path.join(folder,item.name))).concat('tools').filter(folder=>fs.existsSync(path.join(root,folder,'package.json'))).map(folder=>({folder,...JSON.parse(fs.readFileSync(path.join(root,folder,'package.json'),'utf8').replace(/^\uFEFF/,''))}));
+const byName=new Map(packages.map(pkg=>[pkg.name,pkg])),done=new Set(),active=new Set();
+function build(pkg){if(done.has(pkg.name))return;if(active.has(pkg.name))throw new Error('Workspace dependency cycle: '+pkg.name);active.add(pkg.name);for(const dep of Object.keys({...pkg.dependencies,...pkg.devDependencies}))if(byName.has(dep))build(byName.get(dep));active.delete(pkg.name);if(pkg.scripts?.build){const result=spawnSync(process.execPath,[process.env.npm_execpath,'run','build','--workspace',pkg.name],{cwd:root,stdio:'inherit',windowsHide:true});if(result.status!==0)process.exit(result.status??1);}done.add(pkg.name);}
+for(const pkg of packages)build(pkg);

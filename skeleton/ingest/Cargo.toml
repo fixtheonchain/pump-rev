@@ -1,0 +1,23 @@
+[package]
+name = "pump-ingest"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+anyhow = "1.0"
+async-nats = "0.46"
+async-trait = "0.1"
+base64 = "0.22"
+bs58 = "0.5"
+bytes = "1"
+dotenvy = "0.15"
+futures-util = "0.3"
+prost = "0.14"
+reqwest = { version = "0.12", default-features = false, features = ["json", "stream", "http2", "rustls-tls"] }
+rust_decimal = { version = "1.40", default-features = false, features = ["std"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["arbitrary_precision"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "fs", "io-util", "net", "sync", "time", "signal"] }
+tokio-stream = "0.1"
+

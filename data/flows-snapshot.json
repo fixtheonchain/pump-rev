@@ -1,0 +1,116 @@
+{
+  "rpc": "https://api.mainnet-beta.solana.com",
+  "readAt": "2026-10-28T06:38:01.952Z",
+  "upgradeAuthorityLatest": [
+    {
+      "signature": "2zsoY8doVFSfB1L8BQQ9GeyeEA1PgFUoFdK5CrqkzGtq8d8ie7cdUuScCue8RFLXWXFjmDvJiV6kJBcF3rUfXMXv",
+      "slot": 458921517,
+      "blockTime": "2026-10-19T17:47:20.000Z",
+      "fee": 32940,
+      "err": null,
+      "signers": [
+        "4tbEe4AquJWyMh7f7yE5poFChhsuPbeGh7EHVQCvq2N8"
+      ],
+      "instructions": [
+        {
+          "program": "ComputeBudget111111111111111111111111111111",
+          "name": null,
+          "accounts": []
+        },
+        {
+          "program": "ComputeBudget111111111111111111111111111111",
+          "name": null,
+          "accounts": []
+        },
+        {
+          "program": "11111111111111111111111111111111",
+          "name": null,
+          "accounts": [
+            "4tbEe4AquJWyMh7f7yE5poFChhsuPbeGh7EHVQCvq2N8",
+            "DttWaMuVvTiduZRnguLF7jNxTgiMBZ1hyAumKUiL2KRL"
+          ]
+        },
+        {
+          "program": "SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf",
+          "name": null,
+          "accounts": [
+            "2yMoQqQrtbhq3nQ3wFoQQawWS65qcqUXcwHEYha4rshW",
+            "42F7AELhzwQkavPPzcAbM5UUddjX3RvJSsEXJdN1gqWW",
+            "GfbWZSq1MMjdcfMZeq682KGTxHPt1RAfDA1HGPWdgz3Z",
+            "4tbEe4AquJWyMh7f7yE5poFChhsuPbeGh7EHVQCvq2N8",
+            "7gZufwwAo17y5kg8FMyJy2phgpvv9RSdzWtdXiWHjFr8",
+            "6naEzKeUuFh1Jeeu51NXQgr5qkXgXtc9WKNct4xynVJc",
+            "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+            "DqqRvXSkQyv4R155aeP66HxzWHBvDJZiWqUnpVwYK4KQ",
+            "92gWFZMpGhWzVq5tjBnJxF9VnFwE3ydB2idJp9z2D9Nr",
+            "BPFLoaderUpgradeab1e11111111111111111111111",
+            "SysvarRent111111111111111111111111111111111",
+            "SysvarC1ock11111111111111111111111111111111"
+          ]
+        }
+      ],
+      "events": [],
+      "solDeltas": [
+        {
+          "account": "4tbEe4AquJWyMh7f7yE5poFChhsuPbeGh7EHVQCvq2N8",
+          "role": null,
+          "lamports": -132940
+        },
+        {
+          "account": "DttWaMuVvTiduZRnguLF7jNxTgiMBZ1hyAumKUiL2KRL",
+          "role": null,
+          "lamports": 100000
+        },
+        {
+          "account": "DqqRvXSkQyv4R155aeP66HxzWHBvDJZiWqUnpVwYK4KQ",
+          "role": null,
+          "lamports": -6444879160
+        },
+        {
+          "account": "92gWFZMpGhWzVq5tjBnJxF9VnFwE3ydB2idJp9z2D9Nr",
+          "role": "upgrade authority",
+          "lamports": 6444879160
+        }
+      ],
+      "tokenDeltas": []
+    }
+  ],
+  "adminLatest": [],
+  "multisigs": [
+    {
+      "address": "2yMoQqQrtbhq3nQ3wFoQQawWS65qcqUXcwHEYha4rshW",
+      "createKey": "7KGBwXeE4vHunQu2xzEFLsezcjJCp8Rk226hNAVRkg1W",
+      "configAuthority": "11111111111111111111111111111111",
+      "threshold": 3,
+      "timeLockSeconds": 0,
+      "transactionIndex": "157",
+      "rentCollector": null,
+      "bump": 255,
+      "members": [
+        {
+          "key": "4tbEe4AquJWyMh7f7yE5poFChhsuPbeGh7EHVQCvq2N8",
+          "permissions": 7
+        },
+        {
+          "key": "5sFJMw5dC59oKGKA9LgeYQCSmYS6rLeCegxMkcM2Pwby",
+          "permissions": 7
+        },
+        {
+          "key": "6W6qsDbocrEs3vjri5Di15bf9PLRYhfxekPk25MhVHWz",
+          "permissions": 7
+        },
+        {
+          "key": "7zc8kzBr5wbsQKxYYv9uCMgfcW5zjxLEopvmuf3ig6iw",
+          "permissions": 7
+        }
+      ],
+      "vaults": [
+        "7gZufwwAo17y5kg8FMyJy2phgpvv9RSdzWtdXiWHjFr8",
+        "B5Gw2ULzozMc2TjUetrerMX2KgibuWfXisXD7rpHEZ9N",
+        "3t6inTBphe2rhW67bJLLoaJkNtAYmjcQtoyzTrYGcinE",
+        "8ju7jsLDgq3q7rGrw5Epq8eeawvRfhGnGEXgsDh9WcRK"
+      ]
+    }
+  ],
+  "rpcCalls": 4
+}

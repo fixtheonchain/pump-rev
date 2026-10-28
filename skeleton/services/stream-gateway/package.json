@@ -1,0 +1,17 @@
+{
+  "name": "@pump/stream-gateway",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "@pump/runtime": "0.1.0",
+    "@pump/proto": "0.1.0",
+    "@grpc/grpc-js": "^1.14.0",
+    "jsonwebtoken": "^9.0.2",
+    "ws": "^8.18.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@pump/auth-callout",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@pump/nats-auth": "0.1.0",
+    "@pump/runtime": "0.1.0",
+    "nats": "^2.29.3"
+  }
+}

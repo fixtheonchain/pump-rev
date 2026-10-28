@@ -1,0 +1,16 @@
+.git
+.aws
+.local
+.env
+.env.*
+**/.env
+**/.env.*
+node_modules
+**/node_modules
+**/dist
+**/target
+**/src/generated/prisma
+coverage
+**/coverage
+*.log
+**/*.log

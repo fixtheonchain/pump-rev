@@ -1,0 +1,84 @@
+# Rendered by tools/prepare-nats-auth.ts into ignored .local/nats/server.conf.
+# Static service credentials are local generated values, never committed here.
+server_name: pumpskel-local
+listen: 0.0.0.0:4222
+http: 0.0.0.0:8222
+jetstream { store_dir: /data/jetstream }
+system_account: SYS
+
+accounts {
+  AUTH {
+    users: [
+      {
+        user: "auth-callout"
+        password: @@PASSWORD_AUTH_CALLOUT@@
+        permissions {
+          subscribe: { allow: ["$SYS.REQ.USER.AUTH"] }
+          allow_responses: { max: 1, expires: @@AUTH_RESPONSE_TTL@@ }
+        }
+      }
+    ]
+  }
+  SYS {
+    users: [
+      {
+        user: "system"
+        password: @@PASSWORD_SYSTEM@@
+        permissions {
+          publish: { allow: ["$SYS.REQ.SERVER.PING", "$SYS.REQ.SERVER.PING.VARZ", "$SYS.REQ.SERVER.PING.HEALTHZ"] }
+          subscribe: { allow: ["_INBOX.system.>", "$SYS.SERVER.>"] }
+        }
+      }
+    ]
+  }
+  CORE {
+    jetstream: enabled
+    exports: [
+      { stream: "trading.events.>", accounts: [PUBLIC] }
+      { stream: "dm.user.*", accounts: [USER] }
+      { stream: "followingFeed.user.*", accounts: [USER] }
+      { stream: "alertsFeed.user.*.*", accounts: [USER] }
+      { stream: "notifications.user.*", accounts: [USER] }
+      { stream: "positions.*", accounts: [USER] }
+      { stream: "account_balance_change.*.*", accounts: [USER] }
+    ]
+    users: @@CORE_USERS@@
+  }
+  PUBLIC {
+    imports: [ { stream: { account: CORE, subject: "trading.events.>" } } ]
+    users: [
+      {
+        user: "subscriber"
+        password: @@PASSWORD_PUBLIC@@
+        permissions {
+          publish: { deny: [">"] }
+          subscribe: { allow: ["trading.events.>"] }
+        }
+      }
+    ]
+  }
+  USER {
+    imports: [
+      { stream: { account: CORE, subject: "dm.user.*" } }
+      { stream: { account: CORE, subject: "followingFeed.user.*" } }
+      { stream: { account: CORE, subject: "alertsFeed.user.*.*" } }
+      { stream: { account: CORE, subject: "notifications.user.*" } }
+      { stream: { account: CORE, subject: "positions.*" } }
+      { stream: { account: CORE, subject: "account_balance_change.*.*" } }
+    ]
+  }
+}
+
+authorization {
+  # NATS 2.11 parses this field as numeric seconds, not a duration string.
+  timeout: @@AUTH_TIMEOUT_SECONDS@@
+  auth_callout {
+    issuer: @@AUTH_ISSUER@@
+    xkey: @@AUTH_XKEY@@
+    auth_users: ["auth-callout"]
+    account: AUTH
+    # NATS 2.11: static service/public/SYS users authenticate normally.
+    # Unknown token credentials enter $G and are delegated to this callout.
+    allowed_accounts: [USER]
+  }
+}
